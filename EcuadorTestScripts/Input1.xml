@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Input>
+<PaymentManager>
+<Channels>
+<TC Id = "STC_Credit Limit Update_WebServices_Auto_001" Depend = "" Description = "Perform Credit Limit Update to MD from WebServices when NewCredit Limit less than Credit Limit Amount of MD with unique referenceId as numeric">
+<Step Action = "open" RefObj = "AdminURL" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "EnglishLanguageLink_Admin" Val = ""></Step>
+<Step Action = "type" RefObj = "UserName_admin" Val = "superadmin"></Step>
+<Step Action = "type" RefObj = "Password_admin" Val = "mxn"></Step>
+<Step Action = "clickAndWait" RefObj = "Login_admin" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "DistributorManagementLink" Val = ""></Step>
+<Step Action = "type" RefObj = "PartnerContent_Admin" Val = "readProperty-MXCLH_MD"></Step>
+<Step Action = "select" RefObj = "levelDropDownInDistributors" Val = "label=1"></Step>
+<Step Action = "clickAndWait" RefObj = "Submit" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "Dummy" Val = "readProperty-MXCLH_MD"></Step>
+<Step Action = "clickAndWait" RefObj = "Dummy" Val = "readProperty-MXCLH_MD"></Step>
+<Step Action = "storeSelectedValue" RefObj = "IsCreditAvailableOptionInDistributorsProfileModificationPage" Val = "IsCreditAvailableOption"></Step>
+<Step Action = "storeSelectedValue" RefObj = "DistributorTypeInDistributorsProfileModificationPage" Val = "IsPrepaidDistributorOption"></Step>
+<Step Action = "clickAndWait" RefObj = "ModifyProfile" Val = ""></Step>
+<RequestToWebService>
+<Field ID = "Transaction Name" Val = "CreditLimitUpdate"></Field>
+<Field ID = "PackageName" Val = "SirSystemService"></Field>
+<Field ID = "username" Val = "superadmin"></Field>
+<Field ID = "password" Val = "JqW9sHz4Wq8="></Field>
+<Field ID = "referenceId" Val = "get-randomNumber:6"></Field>
+<Field ID = "distributorId" Val = "readProperty-MXCLH_MD"></Field>
+<Field ID = "distributorNewCreditLimit" Val = "100"></Field>
+</RequestToWebService>
+<Expected ExpAction = "verifyAttributeInWebServiceResponse" ExpRefName = "ResponceTextNode" ExpVal = "//creditLimitUpdateResponse/responseCode:00" ></Expected>
+<Expected ExpAction = "verifyAttributeInWebServiceResponse" ExpRefName = "ResponceTextNode" ExpVal = "//creditLimitUpdateResponse/responseDescription:Transaction is Success" ></Expected>
+<Step Action = "storeAttributeFromWebServiceRequest" RefObj = "RequestTextNode" Val = "//creditLimitUpdateRequest/distributorNewCreditLimit:CreditRequestAmt"></Step>
+<Step Action = "storeAttributeFromWebServiceRequest" RefObj = "RequestTextNode" Val = "//creditLimitUpdateRequest/referenceId:referenceId"></Step>
+<Expected ExpAction = "verifyAttributeInWebServiceResponse" ExpRefName = "ResponceTextNode" ExpVal = "//creditLimitUpdateResponse/referenceId:get-referenceId" ></Expected>
+<Step Action = "clickAndWait" RefObj = "DistributorManagementLink" Val = ""></Step>
+<Step Action = "type" RefObj = "PartnerContent_Admin" Val = "readProperty-MXCLH_MD"></Step>
+<Step Action = "select" RefObj = "levelDropDownInDistributors" Val = "label=1"></Step>
+<Step Action = "clickAndWait" RefObj = "Submit" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "Dummy" Val = "readProperty-MXCLH_MD"></Step>
+<Step Action = "clickAndWait" RefObj = "Dummy" Val = "readProperty-MXCLH_MD"></Step>
+<Expected ExpAction = "verifyText" ExpRefName = "IsCreditAvailableOptionInDistributorsProfileModificationPage" ExpVal = "Yes" ></Expected>
+<Expected ExpAction = "verifyText" ExpRefName = "DistributorTypeInDistributorsProfileModificationPage" ExpVal = "No" ></Expected>
+<Step Action = "clickAndWait" RefObj = "LogOut" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LoginAgain_Admin" Val = ""></Step>
+<ExpectedResult>Credit Limit update should be successful and MD Credit Limit should be updated successfully</ExpectedResult>
+<ActualResult_Pass>Credit Limit update should be successful and MD Credit Limit should be updated successfully</ActualResult_Pass>
+<ActualResult_Fail>Credit Limit update is not successful</ActualResult_Fail>
+</TC>
+</Channels>
+</PaymentManager>
+</Input>

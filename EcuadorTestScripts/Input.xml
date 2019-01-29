@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Input>
+<PaymentManager>
+<Channels>
+<TC Id = "TokaTestcase_001" Depend = "" Description = "toka login ">
+<Step Action = "open" RefObj = "TokaUrl" Val = ""></Step>
+<Step Action = "type" RefObj = "TokaNetworkEdit" Val = "readProperty-tokaNewwork"></Step>
+<Step Action = "type" RefObj = "TokaUserName" Val = "readProperty-UsernameToka"></Step>
+<Step Action = "type" RefObj = "TokaPassword" Val = "readProperty-PasswordToka"></Step>
+<Step Action = "clickAndWait" RefObj = "TokaLoginButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "TokaLogoutButton" Val = ""></Step>
+<ExpectedResult>toka login success successfully</ExpectedResult>
+<ActualResult_Pass>toka login success successfully</ActualResult_Pass>
+<ActualResult_Fail>toka login success successfully</ActualResult_Fail>
+</TC>
+</Channels>
+</PaymentManager>
+</Input>

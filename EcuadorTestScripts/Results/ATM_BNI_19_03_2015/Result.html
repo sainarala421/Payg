@@ -1,0 +1,67 @@
+<!--!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Test Automation - Results</title>
+<style type="text/css">
+<!--
+@import url("style.css");
+-->
+</style>
+<script language='javascript' src="lib.js" >
+</script>
+<script type="text/javascript" 
+	src="http://www.google.com/jsapi">
+</script>
+<script type="text/javascript">
+ 	google.load('visualization', '1', 
+ 	{packages: ['piechart']});
+</script>
+</head>
+  <body onload="init('Resultlog_firefox.xml');ShowAll('ShowAll')" >
+  		<table border=0 width=990>
+  				<tr>
+  					<td colspan=3 align=center height=1><b><font color='blue' size=5px><u>Test Automation Results</u></font></b>
+  					</td>
+  				</tr>
+  				<tr>
+  					<td  width="50%">
+  						<div id="calc">
+  						</div>
+  					</td>
+  					<td  id="newspaper-a"   width=50%>
+  						<div align='left' id="visualization" style="width: 500px; height: 250px;">
+  						</div>
+  					</td>
+  				</tr>
+  				<tr >
+  					<td >
+  					</td>
+  					<td  align='right' >
+  						
+							 <input type=button  	value ="Summary" 	onclick="ShowAll('Summary')" 	 class="groovybutton" ></input>
+							 <input type=button  	value ="Passed"    	onclick="ShowAll('Pass')"  		class="groovybutton"></input>
+							 <input type=button  	value ="Failed"    	onclick="ShowAll('Fail')" 		class="groovybutton"></input>
+							 <input type=button  	value ="Not Executed" onclick="ShowAll('NE')" 		class="groovybutton"></input>
+							 <input type=button   	value ="ShowAll" 	onclick="ShowAll('ShowAll')" 	class=" groovybutton" ></input>
+ 					
+  					</td>
+  				</tr>
+  		</table>
+      	<div id='Summary'   >
+		</div>
+		<div id='Pass'  >
+		</div>
+		<div id='Fail'  >
+		</div>
+		<div id='NE'>
+		</div>
+		<div id='ShowAll'  >
+		</div>
+		<!-- Try to load Msxml.DOMDocument ActiveX to assist support verification -->
+		<object id="msxml" width="1" height="1" 
+    		classid="CLSID:2933BF90-7B36-11d2-B20E-00C04F983E60" >
+    	</object>
+	</body>
+</html>

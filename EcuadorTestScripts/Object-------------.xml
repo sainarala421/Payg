@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ObjRef>
+<Object-Repository>
+<Obj ObjName = "name=profileType" RefName = "DistributorId"></Obj>
+<Obj ObjName = "name=partnerCompanyName" RefName = "DistributorCompanyName"></Obj>
+<Obj ObjName = "name=addsubgroup" RefName = "AddSubGroupLink"></Obj>
+<Obj ObjName = "name=adddistributor_tm" RefName = "AddDistributorLink"></Obj>
+<Obj ObjName = "name=channelpartners_tm" RefName = "ChannelPartnersLink"></Obj>
+<Obj ObjName = "//input[@id=&apos;partnerContent&apos;]" RefName = "PartnerContent"></Obj>
+<Obj ObjName = "name=submitImg" RefName = "SubmitImage"></Obj>
+<Obj ObjName = "link=111" RefName = "111Link"></Obj>
+<Obj ObjName = "name=subgroupdistributors" RefName = "SubDistributorsLInk"></Obj>
+<Obj ObjName = "link=SUB111" RefName = "SUB111Link"></Obj>
+<Obj ObjName = "name=createsalesperson" RefName = "CreateSalesPersonLink"></Obj>
+<Obj ObjName = "name=addSalesperson" RefName = "AddSalesPersonLink"></Obj>
+<Obj ObjName = "name=salesMDN" RefName = "SalesPersonMDN"></Obj>
+<Obj ObjName = "name=maxFundLimit" RefName = "MaxFundLimit"></Obj>
+<Obj ObjName = "name=rucNo" RefName = "RUCNo"></Obj>
+<Obj ObjName = "link=Click Here to Associate Geographical Location" RefName = "GeographicalLocationLink"></Obj>
+<Obj ObjName = "viewAssociatedChannelsPopUp" RefName = "ViewAssociatedChannelsPopup"></Obj>
+<Obj ObjName = "name=viewAssociatedChannelsPopUp" RefName = "ViewAssociatedChannelsPopupName"></Obj>
+<Obj ObjName = "name=allregions" RefName = "Allregions"></Obj>
+<Obj ObjName = "name=subregions" RefName = "SubRegions"></Obj>
+<Obj ObjName = "name=allprovinces" RefName = "Provinces"></Obj>
+<Obj ObjName = "name=allcities" RefName = "Cities"></Obj>
+<Obj ObjName = "name=loc" RefName = "Location"></Obj>
+<Obj ObjName = "name=submitg" RefName = "Submit"></Obj>
+<Obj ObjName = "null" RefName = "ParentWindow"></Obj>
+<Obj ObjName = "name=contaddress1" RefName = "ContactAddress1"></Obj>
+<Obj ObjName = "name=contzipcode" RefName = "ZipCode"></Obj>
+<Obj ObjName = "name=addresschecking" RefName = "AddressCheckBox"></Obj>
+<Obj ObjName = "name=partnerContactFirstName" RefName = "FirstName"></Obj>
+<Obj ObjName = "name=partnerContactLastName" RefName = "LastName"></Obj>
+<Obj ObjName = "name=partnerPassword" RefName = "DistPassword"></Obj>
+<Obj ObjName = "name=confirmPassword" RefName = "ConfirmPassword"></Obj>
+<Obj ObjName = "name=emailID" RefName = "EmailID"></Obj>
+<Obj ObjName = "name=promTopUpListChk" RefName = "ChannelsCheckBox"></Obj>
+<Obj ObjName = "name=okImg" RefName = "OkImage"></Obj>
+<Obj ObjName = "name=addImg" RefName = "AddImage"></Obj>
+<Obj ObjName = "name=distrfundstransfer_tm" RefName = "DistributorFundsTransfer"></Obj>
+<Obj ObjName = "name=partnerId" RefName = "PartnerID"></Obj>
+<Obj ObjName = "name=toAcctId0" RefName = "AccountID"></Obj>
+<Obj ObjName = "name=transferAmtSUB111" RefName = "TransferAmount"></Obj>
+<Obj ObjName = "name=preview" RefName = "Preview"></Obj>
+<Obj ObjName = "//img[@alt=&apos;Submit&apos;]" RefName = "SubmitButton"></Obj>
+<Obj ObjName = "http://192.168.149.177:8180/airmanage/networkadmin/login.jsp" RefName = "URL177"></Obj>
+<Obj ObjName = "//img[@alt=&apos;View in English&apos; and @name=&apos;img6&apos;]" RefName = "LanguageLink"></Obj>
+<Obj ObjName = "name=login" RefName = "UserName"></Obj>
+<Obj ObjName = "name=password" RefName = "Password"></Obj>
+<Obj ObjName = "name=loginImg" RefName = "LoginImage"></Obj>
+<Obj ObjName = "39" RefName = "ErrorCode"></Obj>
+<Obj ObjName = "{call SP_PARTNER_CLEANUP(?,?,?,?)}" RefName = "StoreProcedureName"></Obj>
+<Obj ObjName = "name=img7" RefName = "Logout"></Obj>
+<Obj ObjName = "name=loginImage" RefName = "LoginAgainButton"></Obj>
+<Obj ObjName = "38" RefName = "TransactionID"></Obj>
+<Obj ObjName = "POS" RefName = "DBName"></Obj>
+<Obj ObjName = "get-Comments" RefName = "CommentsFromDB"></Obj>
+<Obj ObjName = "//input[@name=&apos;transId&apos;]" RefName = "TransactionIDTextBox"></Obj>
+<Obj ObjName = "//td[2]/table/tbody/tr[2]/td[2]/table" RefName = "TrancactionTable"></Obj>
+<Obj ObjName = "get-ERRDESC" RefName = "ErrorDescriptioninDB"></Obj>
+<Obj ObjName = "name=rejectedtransactions" RefName = "RejectedTransactionsLink"></Obj>
+<Obj ObjName = "//td[2]/table/tbody/tr/td[2]/table" RefName = "RejectedTransactionsTable"></Obj>
+<Obj ObjName = "name=fraudlockedsubscribers_tm" RefName = "FraudLockedUserLink"></Obj>
+<Obj ObjName = "name=subId" RefName = "SubscriberMDN"></Obj>
+<Obj ObjName = "name=userType" RefName = "UserType"></Obj>
+<Obj ObjName = "name=saveImg" RefName = "SaveImage"></Obj>
+<Obj ObjName = "name=chk0" RefName = "SubscriberCheckBox"></Obj>
+<Obj ObjName = "name=unlockImg" RefName = "UnlockImage"></Obj>
+<Obj ObjName = "name=status" RefName = "Status"></Obj>
+<Obj ObjName = "//textarea[@name=&apos;updateComment&apos;]" RefName = "Comments"></Obj>
+<Obj ObjName = "name=modify" RefName = "Modify"></Obj>
+<Obj ObjName = "name=isCredit" RefName = "CreditAvailable"></Obj>
+<Obj ObjName = "name=leftPanelImage1" RefName = "SystemConfigurationsLInk"></Obj>
+<Obj ObjName = "name=billingsystemconfigruation" RefName = "BillingSystemConfiguration"></Obj>
+<Obj ObjName = "//tr[8]/td/input" RefName = "AltamiraCheckBox"></Obj>
+<Obj ObjName = "name=modify1" RefName = "ModifyImage"></Obj>
+<Obj ObjName = "name=connStatus1" RefName = "ConnectionStatus"></Obj>
+<Obj ObjName = "name=submitbutton" RefName = "SubmitButton1"></Obj>
+<Obj ObjName = "name=minmaxrangelimits" RefName = "MinMaxRange"></Obj>
+<Obj ObjName = "name=chkBox17" RefName = "SMSCheckBox"></Obj>
+<Obj ObjName = "name=minValue17" RefName = "MinValue"></Obj>
+<Obj ObjName = "name=maxValue17" RefName = "MaxValue"></Obj>
+<Obj ObjName = "name=fraudList" RefName = "FraudList"></Obj>
+<Obj ObjName = "name=replenish" RefName = "RepllineshmentChannels"></Obj>
+<Obj ObjName = "name=preVal0" RefName = "ReplenishValue"></Obj>
+<Obj ObjName = "name=comments" RefName = "ReplenishComments"></Obj>
+<Obj ObjName = "name=deleteImg" RefName = "DeleteImage"></Obj>
+<Obj ObjName = "//img[@name=&apos;reversaltransactionreport&apos;]" RefName = "ReversalTransactionReport"></Obj>
+<Obj ObjName = "//tr[4]/td/table" RefName = "ReversalTransactionTable"></Obj>
+<Obj ObjName = "name=epingeneration_tm" RefName = "PinGeneration"></Obj>
+<Obj ObjName = "name=denomination" RefName = "Denomination"></Obj>
+<Obj ObjName = "1" RefName = "NumberofPins"></Obj>
+<Obj ObjName = "fileLoader" RefName = "FileLoader"></Obj>
+<Obj ObjName = "name=generatepinImg" RefName = "generatePins"></Obj>
+<Obj ObjName = "http://192.168.149.176:8180/airmanage/networkadmin/login.jsp" RefName = "URL176"></Obj>
+<Obj ObjName = "name=isSingleSrcEnabled" RefName = "IsSingleSourceHirearchy"></Obj>
+<Obj ObjName = "name=chkBox11" RefName = "BankCheckBox"></Obj>
+<Obj ObjName = "name=minValue11" RefName = "BankMinValue"></Obj>
+<Obj ObjName = "name=maxValue11" RefName = "BankMaxValue"></Obj>
+<Obj ObjName = "link=Click here to Associate Channels" RefName = "AssociateChannelsPopup"></Obj>
+<Obj ObjName = "name=pchk0" RefName = "BankChannelCheckBox"></Obj>
+<Obj ObjName = "name=modifyB" RefName = "ModifyButtonB"></Obj>
+<Obj ObjName = "//form/table[1]/tbody/tr[2]/td[2]/table/tbody/tr/td[1]/table/tbody/tr[8]/td[1]/a" RefName = "distributerIdentitylinkDistributorsPage "></Obj>
+<Obj ObjName = "//table[3]/tbody/tr[8]/td/table/tbody/tr[2]/td[1]/a" RefName = "distributerIdentitylinkDistributorsProfilePage1121313"></Obj>
+<Obj ObjName = "name=isPrePaid" RefName = "isPrepaidDistributorDropdown"></Obj>
+<Obj ObjName = "link=SUB297" RefName = "SubDistributorsLInksub297"></Obj>
+<Obj ObjName = "//input[@name=&apos;chk&apos; and @value=&apos;N&apos; and @type=&apos;radio&apos;]" RefName = "useOwnFundsNo"></Obj>
+<Obj ObjName = "//input[@name=&apos;chk&apos; and @value=&apos;Y&apos; and @type=&apos;radio&apos;]" RefName = "useOwnFundsYes"></Obj>
+<Obj ObjName = "//table[1]/tbody/tr[5]/td/table/tbody/tr[2]/td[7]" RefName = "accountBalance(CRC)InDistributorProfilePage"></Obj>
+<Obj ObjName = "//table/tbody/tr[2]/td[2]/table/tbody/tr[10]/td[12]" RefName = "transactionAmount(CRC)inTransactionMonitorPage"></Obj>
+<Obj ObjName = "link=SUB1297" RefName = "SubDistributorsLInksub1297"></Obj>
+<Obj ObjName = "Response" RefName = "responseCode"></Obj>
+<Obj ObjName = "//tr[8]/td[8]" RefName = "mainDistAccountBalance"></Obj>
+<Obj ObjName = "link=776" RefName = "776DistributorLink"></Obj>
+<Obj ObjName = "link=7762" RefName = "7762SubDistributor"></Obj>
+<Obj ObjName = "//tr[2]/td[7]" RefName = "userAccountBalance"></Obj>
+<Obj ObjName = "name=fundtransfertransactions" RefName = "fundTransferTransactionLink"></Obj>
+<Obj ObjName = "name=fundsTransferedTo" RefName = "amountTransferredToDropdown"></Obj>
+<Obj ObjName = "//table[3]/tbody/tr[7]/td/table/tbody/tr[2]/td[2]" RefName = "MDNinDitributorProfilePage"></Obj>
+<Obj ObjName = "//table[3]/tbody/tr[7]/td/table/tbody/tr[2]/td[3]" RefName = "companyNameInDistributotProfile"></Obj>
+<Obj ObjName = "//table[3]/tbody/tr[11]/td/table/tbody/tr[2]/td[1]" RefName = "statusInDistributorProfile"></Obj>
+<Obj ObjName = "link=7761" RefName = "7761SubDistributor"></Obj>
+<Obj ObjName = "get-transactionID" RefName = "transactionIDfromDB"></Obj>
+<Obj ObjName = "get-transactionAmount" RefName = "transactionAmount"></Obj>
+<Obj ObjName = "link=17768" RefName = "17768SalespersonLink"></Obj>
+<Obj ObjName = "//tr[6]/td/table/tbody/tr[2]/td[1]" RefName = "salesPersonID"></Obj>
+<Obj ObjName = "//tr[6]/td/table/tbody/tr[2]/td[2]" RefName = "MDNNumberInSalespesonProfile"></Obj>
+<Obj ObjName = "//tr[6]/td/table/tbody/tr[2]/td[3]" RefName = "companyNameInSalespersonProfile"></Obj>
+<Obj ObjName = "name=creditAlloted" RefName = "credirAllotEditboxInDistributorProfile"></Obj>
+<Obj ObjName = "name=distributorpayments_tm" RefName = "distributorPaymentTransferSublink"></Obj>
+<Obj ObjName = "name=newpayments" RefName = "newpaymentsSubTab"></Obj>
+<Obj ObjName = "name=distributor" RefName = "distributorIDEditbox"></Obj>
+<Obj ObjName = "name=referenceNbr" RefName = "referenceNumberEditbox"></Obj>
+<Obj ObjName = "//tr[7]/td/table" RefName = "fundTransferTable"></Obj>
+<Obj ObjName = "//tr[4]/td[6]" RefName = "subDistributorCurrentAccountbalance"></Obj>
+<Obj ObjName = "//tr[8]/td[4]" RefName = "afterAvaliableAccountbalnceInFundTransfer"></Obj>
+<Obj ObjName = "//tr[2]/td[8]" RefName = "salespersonPostTransferBalance"></Obj>
+<Obj ObjName = "name=distRatings" RefName = "disratinginAdddistributor"></Obj>
+<Obj ObjName = "name=acctBalThresold" RefName = "acctBalThresoldinAdddistribotor"></Obj>
+<Obj ObjName = "name=currencyId" RefName = "currencyidinAdddistributor"></Obj>
+<Obj ObjName = "name=isLatEnabled" RefName = "lateralenabledinAdddistributor"></Obj>
+<Obj ObjName = "link=get-distributorCreated" RefName = "linkdistributorCreated"></Obj>
+<Obj ObjName = "//tr[5]/td/table" RefName = "distributortableinDistributor"></Obj>
+<Obj ObjName = "//table[3]/tbody/tr[3]/td" RefName = "datahasbeenmodifiedTextindistributor"></Obj>
+<Obj ObjName = "id=salesId" RefName = "salesidEditinLateralTransfer"></Obj>
+<Obj ObjName = "//td[8]/input" RefName = "amounttransferEditboxinFundtransfer"></Obj>
+<Obj ObjName = "//tr[4]/td/table/tbody/tr/td/table/tbody/tr/td/a/img" RefName = "ProfileLeftPanelLink"></Obj>
+<Obj ObjName = "//td/table/tbody/tr/td/table/tbody/tr[2]/td/a/img" RefName = "LeftPanelAuditLogsLink-State(Inactive)"></Obj>
+<Obj ObjName = "//td/table/tbody/tr/td/table/tbody/tr[3]/td/a/img" RefName = "LeftPanelCustomerSupportLink-State(Inactive)"></Obj>
+<Obj ObjName = "//td/table/tbody/tr/td/table/tbody/tr[4]/td/a/img" RefName = "LeftPanelSystemManagementLink-State(Inactive)"></Obj>
+<Obj ObjName = "//td/table/tbody/tr/td/table/tbody/tr[5]/td/a/img" RefName = "LeftPanelePinManagementLink-State(Inactive)"></Obj>
+<Obj ObjName = "name=eventauditlogs" RefName = "eventauditlogbutton"></Obj>
+<Obj ObjName = "name=profEvent" RefName = "profEventselect"></Obj>
+<Obj ObjName = "name=sourceName" RefName = "sourceprofileName"></Obj>
+<Obj ObjName = "name=searchImg" RefName = "NewSearchImage"></Obj>
+<Obj ObjName = "//table[2]/tbody/tr[4]/td/table" RefName = "profiltableinAuditlogs"></Obj>
+<Obj ObjName = "//tr[11]/td/table" RefName = "lateraltransfertableinDisbtributor"></Obj>
+<Obj ObjName = "name=leftPanelImage0" RefName = "newAdministratorLink"></Obj>
+<Obj ObjName = "profName" RefName = "profileName"></Obj>
+<Obj ObjName = "//tr[3]/td[3]" RefName = "profileTypeInAdministration"></Obj>
+<Obj ObjName = "//tr[3]/td[4]" RefName = "profileDateInAdministration"></Obj>
+<Obj ObjName = "//tr[3]/td[5]" RefName = "profilecreationNameInAdminstration"></Obj>
+<Obj ObjName = "//tr[3]/td[6]" RefName = "profilestatusInAdminstration"></Obj>
+<Obj ObjName = "ProfileName" RefName = "storeOldProfileNameInAdmin"></Obj>
+<Obj ObjName = "randomProfileName New User Privileges Data Added Successfully" RefName = "newUserAddedConfirmationText"></Obj>
+<Obj ObjName = "//table[2]" RefName = "viewProfileTable"></Obj>
+<Obj ObjName = "name=subImg" RefName = "submitbutton"></Obj>
+<Obj ObjName = "userTypeId" RefName = "profileTypeListBox"></Obj>
+<Obj ObjName = "name=userTypeId2" RefName = "externalTypeListbox"></Obj>
+<Obj ObjName = "name=typeName" RefName = "profilenameInViewprovililages"></Obj>
+<Obj ObjName = "id=sel" RefName = "fundTransferDropdown"></Obj>
+<Obj ObjName = "name=toAcctType" RefName = "distributorFundTransferType"></Obj>
+<Obj ObjName = "name=transferAmtSD2051" RefName = "subBalnaceAmtInFundTransfer"></Obj>
+<Obj ObjName = "name=postTransferAmtSD2051" RefName = "postTransferAmtInFundtransfer"></Obj>
+<Obj ObjName = "name=netFundAmt" RefName = "netFundEditBoxInFundTransfer"></Obj>
+<Obj ObjName = "//tr[3]/td[7]" RefName = "previousBalanceInSPtable"></Obj>
+<Obj ObjName = "name=fundsTransferoptions" RefName = "fundTransferDropdownInReports"></Obj>
+<Obj ObjName = "name=salesPersonId" RefName = "salesIDEditboxInreports"></Obj>
+<Obj ObjName = "//tr[7]/td/table/tbody/tr[4]/td[1]" RefName = "sourceTransactionnumber"></Obj>
+<Obj ObjName = "//table/tbody/tr[2]/td[2]/table[2]/tbody/tr[7]/td/table" RefName = "verifyTransactionTable"></Obj>
+<Obj ObjName = "//tr[2]/td[6]" RefName = "transferAmountInSDTable"></Obj>
+<Obj ObjName = "//tr[2]/td[7]" RefName = "postTransferBalanceAmountInSDTable"></Obj>
+<Obj ObjName = "//tr[7]/td[4]" RefName = "afterTransactionMDBalanceInFundTransferTable"></Obj>
+<Obj ObjName = "//tr[4]/td/table/tbody/tr/td" RefName = "transactionMessageInFundTransfer"></Obj>
+<Obj ObjName = "name=transferAmtSP2051" RefName = "transferAmountSPInFundTransfer"></Obj>
+<Obj ObjName = "//tr[6]/td/table/tbody/tr[2]/td" RefName = "salespersonIdInFundTransferTable"></Obj>
+<Obj ObjName = "//tr[6]/td[4]" RefName = "mainDistributonBalanceInFundTransfer"></Obj>
+<Obj ObjName = "name=amtPaid" RefName = "amountpaidEditBox"></Obj>
+<Obj ObjName = "name=submit1button" RefName = "submitButtonInNewpaymentsTab"></Obj>
+<Obj ObjName = "link=get-DistributorID" RefName = "distributorLink"></Obj>
+<Obj ObjName = "//tr[6]/td/table/tbody/tr[3]/td[2]" RefName = "subDistributorIDInFundTransfer"></Obj>
+<Obj ObjName = "name=transferAmtSD207" RefName = "subDistributorBalnaceAmtInFundTransfer"></Obj>
+<Obj ObjName = "//td[2]/table/tbody/tr/td/table" RefName = "verifyDistributorTable"></Obj>
+<Obj ObjName = "name=transferAmtSD208" RefName = "transferAmountSubDistribuorInFundTransfer"></Obj>
+<Obj ObjName = "name=transferAmtSD1207" RefName = "subDistributorTransferAmountInFundTransfer"></Obj>
+<Obj ObjName = "name=toAcctId1" RefName = "subDistributorCheckboxInFundTransfer"></Obj>
+<Obj ObjName = "name=subDistLastName" RefName = "subdistributorLastNameEditbox"></Obj>
+<Obj ObjName = "//tr[5]/td[4]" RefName = "mainDistributorPresentAccountbalnce"></Obj>
+<Obj ObjName = "name=transferAmt208" RefName = "subDistributorTransferAmountEditbox"></Obj>
+<Obj ObjName = "name=salesLastName" RefName = "salesPersonLastNameEditbox"></Obj>
+<Obj ObjName = "name=transferAmtSP208" RefName = "salesPersonTransferAmountEditbox"></Obj>
+<Obj ObjName = "name=subDistId" RefName = "subdistributorIdEditbox"></Obj>
+<Obj ObjName = "name=isMultiNetRecEnabled" RefName = "mult NetworkReceive EnabledDropdown"></Obj>
+<Obj ObjName = "name=isMultiNetEnabled" RefName = "multiNetEnabledDropdown"></Obj>
+<Obj ObjName = "name=accountBal" RefName = "accountBalanceEdit"></Obj>
+<Obj ObjName = "//table/tbody/tr[6]/td[1]/input" RefName = "fraudRoleUser"></Obj>
+<Obj ObjName = "name=fraudmgmtrules_tm" RefName = "fraudManagementRulesLink"></Obj>
+<Obj ObjName = "61" RefName = "ValidationIdentifier"></Obj>
+<Obj ObjName = "62" RefName = "OrderId"></Obj>
+<Obj ObjName = "24" RefName = "simDistributorId"></Obj>
+<Obj ObjName = "name=isMultiNetRecEnabled" RefName = "multinetReceiveDropdown"></Obj>
+<Obj ObjName = "get-reversalTransactionID" RefName = "reversalTransactionID"></Obj>
+<Obj ObjName = "//tr[2]/td[3]" RefName = "creditLiimit"></Obj>
+<Obj ObjName = "link=17769" RefName = "17769SalepersonLink"></Obj>
+<Obj ObjName = "name=distributorId" RefName = "distributorIDInFundtransfer"></Obj>
+<Obj ObjName = "link=577" RefName = "SubDistributorsLInksub577"></Obj>
+<Obj ObjName = "link=579" RefName = "salesPerson579"></Obj>
+<Obj ObjName = "name=returnImg" RefName = "returnButton"></Obj>
+<Obj ObjName = "link=576" RefName = "576Link"></Obj>
+<Obj ObjName = "link=578" RefName = "salesPerson578"></Obj>
+<Obj ObjName = "//table[1]/tbody/tr[5]/td/table/tbody/tr[2]/td[3]" RefName = "availableCreditLimit"></Obj>
+<Obj ObjName = "link=SUB576" RefName = "SUB576Link"></Obj>
+<Obj ObjName = "link=SUB296" RefName = "subDistributorlink296"></Obj>
+<Obj ObjName = "//select[@name=&apos;chanlId&apos;]" RefName = "replenishmentChannelDropDown"></Obj>
+<Obj ObjName = "name=authId" RefName = "Authorization ID"></Obj>
+<Obj ObjName = "0" RefName = "hisockMessageID"></Obj>
+<Obj ObjName = "http://192.168.149.173:8180/airmanage/networkadmin/login.jsp" RefName = "URL173"></Obj>
+<Obj ObjName = "37" RefName = "RetrievalReferenceNumber"></Obj>
+<Obj ObjName = "link=2761" RefName = "2761Subdistributor"></Obj>
+<Obj ObjName = "//table[2]/tbody/tr[2]/td[2]/table" RefName = "fraudLockTable"></Obj>
+<Obj ObjName = "link=F999" RefName = "F999MainDistributorLink"></Obj>
+<Obj ObjName = "link=F99901" RefName = "F99901SubdistributorLink"></Obj>
+<Obj ObjName = "link=F99908" RefName = "F99908SalespersonLink"></Obj>
+<Obj ObjName = "name=reversetopupphone" RefName = "reverseTopUpPhoneSubLinkInCustomerSupport"></Obj>
+<Obj ObjName = "//select[@name=&apos;txMode&apos;]" RefName = "transactionModeDropDownInCustomerSupportPage"></Obj>
+<Obj ObjName = "//select[@name=&apos;reversalType&apos;]" RefName = "reversalTypeDropDownInCustomerSupportPage"></Obj>
+<Obj ObjName = "//select[@name=&apos;channelId&apos;]" RefName = "replenishmentChannelDropDownInCustomerSupportPage"></Obj>
+<Obj ObjName = "//input[@name=&apos;customerId&apos;]" RefName = "cellularNumberEditBoxInCustomerSupportPage"></Obj>
+<Obj ObjName = "//input[@name=&apos;transAmt&apos;]" RefName = "transactionAmountInCustomerSupportPage"></Obj>
+<Obj ObjName = "//input[@name=&apos;finInstNo&apos;]" RefName = "systemTraceAuditNumberEditBoxInCustomerSupportPage"></Obj>
+<Obj ObjName = "//input[@name=&apos;authorizeId&apos;]" RefName = "authorizationIDEditboxInCustomerSupportPage"></Obj>
+<Obj ObjName = "//input[@name=&apos;mainDistId&apos;]" RefName = "mainDistributorEditBoxIbCustomerSupportPage"></Obj>
+<Obj ObjName = "//input[@name=&apos;subDistId&apos;]" RefName = "subDistributorIdEditboxInCustomerSupportPage"></Obj>
+<Obj ObjName = "name=terminalId" RefName = "terminalIDEditBoxInCustomerSupportPage"></Obj>
+<Obj ObjName = "//img[@name=&apos;sell&apos; and @alt=&apos;Preview&apos;]" RefName = "previewButtonInCustomerSupportPage"></Obj>
+<Obj ObjName = "//img[@alt=&apos;Reversal&apos; and @name=&apos;reverse1&apos;]" RefName = "reverseButtonInReversalTop-upPhonePreviewPage"></Obj>
+<Obj ObjName = "//table/tbody/tr[3]/td/table/tbody/tr[9]/td[2]" RefName = "transactionNumberInReversalTop-upPhoneResultPage"></Obj>
+<Obj ObjName = "//table/tbody/tr[3]/td/table/tbody/tr[8]/td[2]" RefName = "authorizationIDInReversalTop-upPhoneResultPage"></Obj>
+<Obj ObjName = "//img[@name=&apos;ok&apos;]" RefName = "okButton"></Obj>
+<Obj ObjName = "11" RefName = "systemTraceAuditNumber"></Obj>
+<Obj ObjName = "css=select[name=&quot;txMode&quot;]" RefName = "transactionModeReversalTopupPhonePage"></Obj>
+<Obj ObjName = "//table/tbody/tr[8]/td[2]" RefName = "oraderIdUireversal"></Obj>
+<Obj ObjName = "css=input[name=&quot;transId&quot;]" RefName = "TranceidCsslocInReversalTransPage"></Obj>
+<Obj ObjName = "60" RefName = "AsynchronousRechargeInquiryResponce"></Obj>
+<Obj ObjName = "TranNumber" RefName = "transactionNumberFromUSSD"></Obj>
+<Obj ObjName = "Status" RefName = "statusFromUSSD"></Obj>
+<Obj ObjName = "ResponseCode" RefName = "responseCodeUSSD"></Obj>
+<Obj ObjName = "SubscriberMDN" RefName = "subscriberMDNUSSD"></Obj>
+<Obj ObjName = "TranAmount" RefName = "tranAmountUSSD"></Obj>
+<Obj ObjName = "MSISDN" RefName = "MSISDNUSSD"></Obj>
+<Obj ObjName = "TranAmount" RefName = "transactionAmountUSSD"></Obj>
+<Obj ObjName = "TotalTrans" RefName = "totalTransactions"></Obj>
+<Obj ObjName = "TotalTranAmt" RefName = "totalTransactionsAmount"></Obj>
+<Obj ObjName = "get-totalTransactionFromDB" RefName = "totalTransactionFromDB"></Obj>
+<Obj ObjName = "get-totalNoOfTransactions" RefName = "totalNoOfTransactions"></Obj>
+<Obj ObjName = "link=1776101" RefName = "1776101Link"></Obj>
+<Obj ObjName = "link=2768" RefName = "2768Link"></Obj>
+<Obj ObjName = "link=776SFSY09" RefName = "776SFSY09SalespersonLink"></Obj>
+<Obj ObjName = "link=F99909" RefName = "F99909SalespersonLink"></Obj>
+<Obj ObjName = "//tr[8]/td[2]" RefName = "transactionIDInReversalTopUpPage"></Obj>
+<Obj ObjName = "//table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr[7]/td[1]" RefName = "errorMessageInreversalTopupPage"></Obj>
+<Obj ObjName = "Alert" RefName = "checkAlert"></Obj>
+<Obj ObjName = "name=clear" RefName = "clearButtonInReversalTopupPage"></Obj>
+<Obj ObjName = "Prepaid Movistar - Top-Up Phone" RefName = "titleForTopupPhonePage"></Obj>
+<Obj ObjName = "link=776201" RefName = "776201subDistLink"></Obj>
+<Obj ObjName = "//select[@name=&apos;isRechargeReversal&apos;]" RefName = "isRechargeReversalDropDown"></Obj>
+<Obj ObjName = "//tr[5]/td/table/tbody/tr[2]/td[3]" RefName = "distributorCredit Limit(CRC)"></Obj>
+<Obj ObjName = "link=298S" RefName = "298SubDistributor"></Obj>
+<Obj ObjName = "name=distributorpayments_tm" RefName = "distributorPaymentsTab"></Obj>
+<Obj ObjName = "name=newpayments" RefName = "newPaymentsSubTab"></Obj>
+<Obj ObjName = "name=distributor" RefName = "DistributorIdEditBoxInNewPayments "></Obj>
+<Obj ObjName = "name=amtPaid" RefName = "amountPaidEditBoxInNewPayments"></Obj>
+<Obj ObjName = "name=referenceNbr" RefName = "paymentsRefrenceNumInNewPayments"></Obj>
+<Obj ObjName = "name=submit1button" RefName = "SubmitButtonInNewPayments"></Obj>
+<Obj ObjName = "name=isCredit" RefName = "isCreditDropdown"></Obj>
+<Obj ObjName = "//input[@name=&apos;creditStDate&apos;]" RefName = "creditLimitsStartDateTimeEdit "></Obj>
+<Obj ObjName = "//input[@name=&apos;creditEdDate&apos;]" RefName = "creditLimitsEndDateTimeEdit"></Obj>
+<Obj ObjName = "name=pchkA" RefName = "allChannelRemoveCheck"></Obj>
+<Obj ObjName = "name=pchk1" RefName = "IVRdeDistribuidorCheck"></Obj>
+<Obj ObjName = "name=modifyB" RefName = "submitButtoninChannelPopup"></Obj>
+<Obj ObjName = "name=pchk2" RefName = "IVRdePortadorCheckpopup"></Obj>
+<Obj ObjName = "name=pchk3" RefName = "POSdeDistribuidorCheckpopup"></Obj>
+<Obj ObjName = "name=pchk4" RefName = "SMSCheckBoxInChannelpopup"></Obj>
+<Obj ObjName = "name=pchk5" RefName = "USSDCheckInChannelpopup"></Obj>
+<Obj ObjName = "name=pchk6" RefName = "interfazwebparaelDistribuidorInChannelpopup"></Obj>
+<Obj ObjName = "name=pchk7" RefName = "laInterfazWebdeportadorInChannelpopup"></Obj>
+<Obj ObjName = "name=pchk0" RefName = "BankCheckInChannelPopUp"></Obj>
+<Obj ObjName = "name=pchk0" RefName = "BankCheckInChannelPopUp"></Obj>
+<Obj ObjName = "//img[@name=&apos;minmaxrangelimits&apos;]" RefName = "minmaxrangelimitsTabInFraudManagementRulesPages"></Obj>
+<Obj ObjName = "//input[@type=&apos;text&apos; and @name=&apos;minValue15&apos;]" RefName = "smsMinValueEdit/DistributorIvr"></Obj>
+<Obj ObjName = "//input[@type=&apos;text&apos; and @name=&apos;maxValue15&apos;]" RefName = "smsMaxValueEdit/DistributorIvr"></Obj>
+<Obj ObjName = "//input[@type=&apos;text&apos; and @name=&apos;minValue11&apos;]" RefName = "BankMinValueEdit"></Obj>
+<Obj ObjName = "//input[@type=&apos;text&apos; and @name=&apos;maxValue11&apos;]" RefName = "BankMaxValueEdit"></Obj>
+<Obj ObjName = "//input[@type=&apos;text&apos; and @name=&apos;minValue13&apos;]" RefName = "IvrMinValueEdit"></Obj>
+<Obj ObjName = "//input[@type=&apos;text&apos; and @name=&apos;maxValue13&apos;]" RefName = "IvrMaxValueEdit"></Obj>
+<Obj ObjName = "//input[@type=&apos;text&apos; and @name=&apos;minValue14&apos;]" RefName = "PosMinValueEdit"></Obj>
+<Obj ObjName = "//input[@type=&apos;text&apos; and @name=&apos;maxValue14&apos;]" RefName = "PosMaxValueEdit"></Obj>
+<Obj ObjName = "//table/tbody/tr/td/table/tbody/tr[7]/td[6]" RefName = "DenominationStatusInPinDenominationsPage "></Obj>
+<Obj ObjName = "//tr[10]/td[4]/a" RefName = "transactionNumberLinkInTransactionMonitorPage"></Obj>
+<Obj ObjName = "transactionMonitorPopUp" RefName = "transactionMonitorPopupWindow"></Obj>
+<Obj ObjName = "name=transactionMonitorPopUp" RefName = "transactionMonitorWindowPopupName"></Obj>
+<Obj ObjName = "//form[@name=&quot;viewSettlementTransactionsFrm&quot;]/table" RefName = "transactionMonitorPopupWindowTable"></Obj>
+<Obj ObjName = "//img[@name=&apos;closeImg&apos;]" RefName = "okButtonTransactionMonitorpopupPage"></Obj>
+<Obj ObjName = "//table/tbody/tr[4]/td/table/tbody/tr[3]/td[1]/a" RefName = "ReveraslTransactionIdIntransactionMonitorPage"></Obj>
+<Obj ObjName = "//form[@name=&quot;viewVoidedTransactionsFrm&quot;]/table" RefName = "reverasaTransactionrecordpopuptable"></Obj>
+<Obj ObjName = "voidedTransactionPopUp" RefName = "reversalTransactionPopupWindow"></Obj>
+<Obj ObjName = "name=voidedTransactionPopUp" RefName = "reversalTransactionPopupWindowName"></Obj>
+<Obj ObjName = "//table/tbody/tr[9]/td[2]/table/tbody/tr[3]/td[4]" RefName = "existingPromotionAmount"></Obj>
+<Obj ObjName = "//table[3]/tbody/tr[7]/td/table/tbody/tr[2]/td[1]/a" RefName = "distributerIdentitylinkDistributorsProfilePage "></Obj>
+<Obj ObjName = "//td[@class=&apos;redTxt&apos;]" RefName = "redTextErrorMsg"></Obj>
+<Obj ObjName = "css=img[name=&quot;submitImg&quot;]" RefName = "SubmitButtonFraudLockUser"></Obj>
+<Obj ObjName = "css=input[name=&quot;chk0&quot;]" RefName = "LockedUserCheck"></Obj>
+<Obj ObjName = "css=img[name=&quot;unlockImg&quot;]" RefName = "UnlockButtonInUserFraudLock"></Obj>
+<Obj ObjName = "css=img[name=&quot;img6&quot;][alt=&quot;View in English&quot;]" RefName = "englishLanguageLink"></Obj>
+<Obj ObjName = "link=297" RefName = "link297"></Obj>
+<Obj ObjName = "//input[@name=&apos;orderId&apos;]" RefName = "oraderidEdit"></Obj>
+<Obj ObjName = "css=select[name=&quot;txMode&quot;]" RefName = "Transaction ModeInTransactionMonitor"></Obj>
+<Obj ObjName = "//table[3]/tbody/tr[12]/td/table/tbody/tr[2]/td[1]" RefName = "distributorStatusInDistributorDetailsPage"></Obj>
+<Obj ObjName = "css=select[name=&quot;status&quot;]" RefName = "StatausDropDown"></Obj>
+<Obj ObjName = "http://192.168.149.177:8380/airmanage/networkadmin/login.jsp" RefName = "EcuadorURL"></Obj>
+<Obj ObjName = "//table/tbody/tr[5]/td/table/tbody/tr[2]/td[6]" RefName = "AccountBalance"></Obj>
+<Obj ObjName = "name=orderId" RefName = "oraderIdEditbox"></Obj>
+<Obj ObjName = "name=epininventory_tm" RefName = "epinInventaryTab"></Obj>
+<Obj ObjName = "css=img[name=&quot;img6&quot;][alt=&quot;View in English&quot;]" RefName = "englishLanuguageLink"></Obj>
+<Obj ObjName = "//input[@name=&apos;login&apos;]" RefName = "pmLoginUserName"></Obj>
+<Obj ObjName = "//input[@name=&apos;password&apos;]" RefName = "PasswordEdit"></Obj>
+<Obj ObjName = "//img[@name=&apos;loginImg&apos;]" RefName = "loginButton"></Obj>
+<Obj ObjName = "css=input[name=&quot;partnerContent&quot;]" RefName = "PartnerContent"></Obj>
+<Obj ObjName = "css=select[name=&quot;isPrePaid&quot;]" RefName = "IsPrepaidDistributorDropDown "></Obj>
+<Obj ObjName = "css=img[name=&quot;modify&quot;]" RefName = "ModifyButton"></Obj>
+<Obj ObjName = "css=img[name=&quot;subgroupdistributors&quot;]" RefName = "subDistributorlink"></Obj>
+<Obj ObjName = "//img[@name=&apos;img7&apos; and @alt=&apos;Logout&apos;]" RefName = "LogoutButton"></Obj>
+<Obj ObjName = "//img[@name=&apos;loginImage&apos;]" RefName = "LoginAgainButton"></Obj>
+<Obj ObjName = "css=input[name=&quot;authId&quot;]" RefName = "AuthorizationIDEdit"></Obj>
+<Obj ObjName = "//img[@name=&apos;rejectedtransactions&apos;]" RefName = "rejectedtransactionstab"></Obj>
+<Obj ObjName = "css=img[name=&quot;reversaltransactionreport&quot;]" RefName = "reversalTransactionReportTab"></Obj>
+<Obj ObjName = "css=input[name=&quot;orderId&quot;]" RefName = "oraderidEdit"></Obj>
+<Obj ObjName = "//img[@name=&apos;fraudmanagementrules&apos;]" RefName = "FraudManagementRuleSubTab"></Obj>
+<Obj ObjName = "//img[@name=&apos;addImg&apos;]" RefName = "addImageButton"></Obj>
+<Obj ObjName = "//img[@name=&apos;leftPanelImage10&apos;]" RefName = "CustomerSupportTab"></Obj>
+<Obj ObjName = "css=input[name=&quot;transId&quot;]" RefName = "transactionNumberEdit"></Obj>
+<Obj ObjName = "css=input[name=&quot;chk&quot;][value=&quot;Y&quot;][type=&quot;radio&quot;]" RefName = "UofOptionRadioButtonYes"></Obj>
+<Obj ObjName = "css=input[name=&quot;chk&quot;][value=&quot;N&quot;][type=&quot;radio&quot;]" RefName = "UofOptionRadioButtonNo"></Obj>
+<Obj ObjName = "//select[@name=&apos;fraudList&apos;]" RefName = "FraudRuleDescriptionDropDown"></Obj>
+<Obj ObjName = "//select[@name=&apos;replenish&apos;]" RefName = "FraudRuleReplenishChannelDropDown"></Obj>
+<Obj ObjName = "name=chkBox0" RefName = "TimePeriodCheckBox"></Obj>
+<Obj ObjName = "//input[@name=&apos;genVal0&apos;]" RefName = "GeneralValueEdit"></Obj>
+<Obj ObjName = "//input[@name=&apos;preVal0&apos;]" RefName = "PreferredValueEdit"></Obj>
+<Obj ObjName = "//img[@name=&apos;rejectedtransactions&apos;]" RefName = "rejectedtransactionsSubTabInTransactionMonitor"></Obj>
+<Obj ObjName = "css=select[name=&quot;distIdentity&quot;]" RefName = "distIdentityDropDown"></Obj>
+<Obj ObjName = "//textarea[@name=&apos;comments&apos;]" RefName = "commentsFieldInFraudRuleTab"></Obj>
+<Obj ObjName = "//img[@name=&apos;failedtransactions&apos;]" RefName = "FailedTransactionnsSubTab"></Obj>
+<Obj ObjName = "//img[@name=&apos;requeueImg&apos;]" RefName = "requeButton"></Obj>
+<Obj ObjName = "//img[@name=&apos;modifybutton&apos;]" RefName = "modifybuttoninReQue"></Obj>
+<Obj ObjName = "http://192.168.149.108:8180/airmanage/networkadmin/login.jsp" RefName = "Url108"></Obj>
+<Obj ObjName = "http://192.168.149.56:8080/IVR/IVRRequestInputForm.jsp" RefName = "simulationUrl"></Obj>
+<Obj ObjName = "//input[@name=&apos;saveRequest&apos; and @value=&apos;N&apos;]" RefName = "ivrLink"></Obj>
+<Obj ObjName = "//input[@type=&apos;submit&apos; and @value=&apos;Send&apos;]" RefName = "sendButtion"></Obj>
+<Obj ObjName = "name=sourceAccountType" RefName = "userAccountTypeDropdown"></Obj>
+<Obj ObjName = "name=destAccountType" RefName = "destinationTypeAccountDropdown"></Obj>
+<Obj ObjName = "name=accountNo" RefName = "userAccountnumberEditbox"></Obj>
+<Obj ObjName = "name=destAccountNo" RefName = "destinationAccountnummberEditbox"></Obj>
+<Obj ObjName = "name=transferAmount" RefName = "transferamountEditbox"></Obj>
+<Obj ObjName = "name=secretCode" RefName = "SecretCodeEdit"></Obj>
+<Obj ObjName = "//TEXTAREA[@name=&apos;string&apos;]" RefName = "tranasctionmessage"></Obj>
+<Obj ObjName = "//table[3]/tbody/tr[9]/td/table/tbody/tr[2]/td[1]/a" RefName = "SubDistributorIdentity"></Obj>
+<Obj ObjName = "//img[@name=&apos;distrfundstransfer_tm&apos;]" RefName = "FundTransferDistributorTabCss"></Obj>
+<Obj ObjName = "//img[@name=&apos;fundtransfertransactions&apos;]" RefName = "FundTransferReportTabCss"></Obj>
+<Obj ObjName = "//table[2]/tbody/tr[7]/td/table/tbody/tr[4]/td[1]/input" RefName = "lateralTransferReversalRadioButton"></Obj>
+<Obj ObjName = "//img[@name=&apos;revertImg&apos;]" RefName = "LateralTransferReversalRequeButton"></Obj>
+<Obj ObjName = "//img[@name=&apos;lateralfundreversalreport&apos;]" RefName = "LatrealTransferReversalReporttab"></Obj>
+<Obj ObjName = "//input[@name=&apos;transNum&apos;]" RefName = "LateralTransferTranasactionNumberEdit"></Obj>
+<Obj ObjName = "//tr[6]/td/table" RefName = "LateralReversalTransactionsReportTable"></Obj>
+<Obj ObjName = "//img[@name=&apos;minmaxrangelimits&apos;]" RefName = "minMaxRangeTabInFraudRuleTab"></Obj>
+<Obj ObjName = "//img[@name=&apos;submitbutton&apos;]" RefName = "MinMaxSubmitButton"></Obj>
+<Obj ObjName = "//table[3]/tbody/tr[9]/td/table/tbody/tr[2]/td[1]/a " RefName = "DistributorIdStoreFromProfile"></Obj>
+<Obj ObjName = "name=genVal0" RefName = "Generalvalue"></Obj>
+<Obj ObjName = "name=fraudmanagementrules" RefName = "Fraudruleleftpanellink"></Obj>
+<Obj ObjName = "name=img6" RefName = "Languageenglish"></Obj>
+<Obj ObjName = "//img[@name=&apos;addImg&apos; and @alt=&apos;Add&apos;]" RefName = "PromotionAddButton"></Obj>
+<Obj ObjName = "//input[@name=&apos;promotionDesc&apos;]" RefName = "PromotionNameEdit"></Obj>
+<Obj ObjName = "//input[@name=&apos;startDate&apos;]" RefName = "promotionStartDate"></Obj>
+<Obj ObjName = "//input[@name=&apos;endDate&apos;]" RefName = "promotionEndDate"></Obj>
+<Obj ObjName = "//textarea[@name=&apos;comments&apos;]" RefName = "promotionComments"></Obj>
+<Obj ObjName = "//input[@name=&apos;maxPromAmt&apos;]" RefName = "MaxPromotionAmount"></Obj>
+<Obj ObjName = "//input[@name=&apos;promotionValue0&apos;]" RefName = "PromotionValueEdit"></Obj>
+<Obj ObjName = "//select[@name=&apos;valueTypes&apos;]" RefName = "PromotionConditionUnit "></Obj>
+<Obj ObjName = "//select[@name=&apos;SelstartValue0&apos;]" RefName = "PromotionConditionStartValue "></Obj>
+<Obj ObjName = "//img[@name=&apos;nextImg&apos;]" RefName = "PromotionnextButton"></Obj>
+<Obj ObjName = "//img[@alt=&apos;Channels&apos;]" RefName = "PromotionChannelLink"></Obj>
+<Obj ObjName = "PromotionChannels" RefName = "PromotionChannel"></Obj>
+<Obj ObjName = "name=PromotionChannels" RefName = "promotionpopup"></Obj>
+<Obj ObjName = "//input[@name=&apos;pchkA&apos;]" RefName = "AllChannelcheck"></Obj>
+<Obj ObjName = "//input[@name=&apos;pchk5&apos;]" RefName = "PosChannelinpromotion"></Obj>
+<Obj ObjName = "//img[@name=&apos;saveImg&apos;]" RefName = "promotionSaveImg"></Obj>
+<Obj ObjName = "css=img[name=&quot;modifyB&quot;]" RefName = "promotionchanneloptionsubmitButton"></Obj>
+<Obj ObjName = "//table/tbody/tr[9]/td/table/tbody/tr[1]/td" RefName = "PromotionAddSuccessMsg"></Obj>
+<Obj ObjName = "//input[@name=&apos;promotionTxt&apos;]" RefName = "promotionSearchEdit"></Obj>
+<Obj ObjName = "//img[@name=&apos;imgSubmit&apos; and @alt=&apos;Submit&apos;]" RefName = "PromtionSearchSubmitButton"></Obj>
+<Obj ObjName = "//img[@name=&apos;modifyImg&apos;]" RefName = "PromotionModifyButtonNew"></Obj>
+<Obj ObjName = "dbValues" RefName = "dbValues"></Obj>
+<Obj ObjName = "//table/tbody/tr[4]/td/table/tbody/tr[3]/td[3]/input" RefName = "ApplicablePromotionAmountNew"></Obj>
+<Obj ObjName = "//form[@name=&quot;viewSettlementTransactionsFrm&quot;]/table/tbody/tr[40]/td[2]" RefName = "PromotionalCouponSerialNumberInTranscationPopup"></Obj>
+<Obj ObjName = "//form[@name=&quot;viewSettlementTransactionsFrm&quot;]/table/tbody/tr[39]/td[2]" RefName = "RedeemedCouponSerialNumberInTransactionPopUp"></Obj>
+<Obj ObjName = "//input[@name=&apos;subscriberId&apos;]" RefName = "CellularNumberEdit"></Obj>
+<Obj ObjName = "//input[@name=&apos;replAmt&apos;]" RefName = "PurchaseSumEdit"></Obj>
+<Obj ObjName = "//img[@name=&apos;sell&apos;]" RefName = "TopupPhoneSellButton"></Obj>
+<Obj ObjName = "//table/tbody/tr[7]/td/table/tbody/tr[1]/td[2]" RefName = "TransNumberOfWebRecharge"></Obj>
+<Obj ObjName = "get-TRANSID" RefName = "TransNumberIVRlink"></Obj>
+<Obj ObjName = "get-TransactionNumber" RefName = "TranceNumberTransactionMonitor"></Obj>
+<Obj ObjName = "44" RefName = "RedemptionId"></Obj>
+<Obj ObjName = "//img[@name=&apos;couponreports_tm&apos;]" RefName = "CouponReportsTab"></Obj>
+<Obj ObjName = "//img[@name=&apos;couponredemptionreport&apos;]" RefName = "couponredemptionreportSubTab"></Obj>
+<Obj ObjName = "//input[@name=&apos;redemptionId&apos;]" RefName = "RedemptionIdEditbox"></Obj>
+<Obj ObjName = "//select[@name=&apos;coupRedemChannel&apos;]" RefName = "CouponRedemptionChannelDropDown"></Obj>
+<Obj ObjName = "//select[@name=&apos;CoupType&apos;]" RefName = "CouponTypeDropdown"></Obj>
+<Obj ObjName = "//tr[5]/td[2]/table" RefName = "CouponRedemptionReportTable_PartnerTransactionMonitor"></Obj>
+<Obj ObjName = "//img[@name=&apos;badmarkedreplacedcouponsreport&apos;]" RefName = "badmarkedreplacedcouponsreportTab"></Obj>
+<Obj ObjName = "//input[@name=&apos;couponCode&apos;]" RefName = "BadMarkedSerialNumberEdit"></Obj>
+<Obj ObjName = "//tr[6]/td[2]/table" RefName = "CouponStatusReport_BadMarkedReplacedCouponsReportTable "></Obj>
+<Obj ObjName = "COUPON_RECHARGE_HARDCOUPON" RefName = "RechargeHardCoupon"></Obj>
+<Obj ObjName = "COUPON_BRAND_HARDCOUPON" RefName = "BrandHardCoupon"></Obj>
+<Obj ObjName = "COUPON_RECHARGE_SOFTCOUPON" RefName = "RechargeSoftCoupon"></Obj>
+<Obj ObjName = "COUPON_BRAND_SOFTCOUPON" RefName = "BrandSoftCoupon"></Obj>
+<Obj ObjName = "link=818" RefName = "link818"></Obj>
+<Obj ObjName = "link=SP818" RefName = "SP818SalesPerson"></Obj>
+<Obj ObjName = "link=SD818" RefName = "SD818SubDistributor"></Obj>
+<Obj ObjName = "link=SP8188" RefName = "SalesPersonSD818"></Obj>
+<Obj ObjName = "link=SP8189" RefName = "SalesPersonSD818sales"></Obj>
+<Obj ObjName = "link=259" RefName = "Link259Distributor"></Obj>
+<Obj ObjName = "link=259S" RefName = "259SubDistributor"></Obj>
+<Obj ObjName = "link=259S1" RefName = "259SubdistributorS1"></Obj>
+<Obj ObjName = "link=268" RefName = "Link268Distributor"></Obj>
+<Obj ObjName = "link=268S" RefName = "268Subdistributor"></Obj>
+<Obj ObjName = "link=268S1" RefName = "268SubdistributorS1"></Obj>
+<Obj ObjName = "link=532" RefName = "Link532Distributor"></Obj>
+<Obj ObjName = "link=110" RefName = "110distributor"></Obj>
+<Obj ObjName = "link=SUB110" RefName = "SUB110Link"></Obj>
+<Obj ObjName = "RECHARGE_SUBSCRIBER_NUMBER" RefName = "rechargeSubscriberNumber"></Obj>
+<Obj ObjName = "FRAUDRULE_SUBSCRIBER_NUMBER" RefName = "fraudSubScriberNumber"></Obj>
+<Obj ObjName = "ASYNC_COUPON_REDEMPTION_MAINDISTRIBUTOR" RefName = "AsyncCouponRedemptionMainDistributor"></Obj>
+<Obj ObjName = "ASYNC_COUPON_REDEMPTION_SUBDISTRIBUTOR" RefName = "AsyncCouponRedemptionSubDistributor"></Obj>
+<Obj ObjName = "ASYNC_COUPON_REDEMPTION_SUBSCRIBER_NUMBER" RefName = "AsyncCouponRedemptionSubscriber"></Obj>
+<Obj ObjName = "get-DistributorAmount" RefName = "DistributorAmountInDB"></Obj>
+<Obj ObjName = "//img[@name=&apos;couponstatusreport&apos;]" RefName = "couponstatusreportSubTabInCouponStatusReportPage"></Obj>
+<Obj ObjName = "//input[@name=&apos;coupCode&apos;]" RefName = "CouponSerialNumberEditBoxInCouponStatusReportPage  "></Obj>
+<Obj ObjName = "//img[@name=&apos;couponmanagement_tm&apos;]" RefName = "couponmanagementSubTabInCouponConfigurationsPage"></Obj>
+<Obj ObjName = "//img[@name=&apos;badcouponenquiry&apos;]" RefName = "CouponSerialNumberEnquiryInCouponProfileCreation "></Obj>
+<Obj ObjName = "//input[@name=&apos;serialNumber&apos;]" RefName = "CouponSerialNumberEditInCouponSerialNumberEnquiryPage    "></Obj>
+<Obj ObjName = "//img[@name=&apos;okImg&apos; and @alt=&apos;Submit&apos;]" RefName = "CouponSerialNumberSubmitButton"></Obj>
+<Obj ObjName = "//table/tbody/tr[10]/td/table/tbody/tr[2]/td[2]" RefName = "CouponSerialNumberInCouponSerialNumberPage "></Obj>
+<Obj ObjName = "//table/tbody/tr[10]/td/table/tbody/tr[10]/td[2]" RefName = "CouponStatusInCouponSerialNumberPage "></Obj>
+<Obj ObjName = "//table/tbody/tr[10]/td/table/tbody/tr[11]/td[2]" RefName = "CouponStatusDescriptionInCouponSerialNumberPage"></Obj>
+<Obj ObjName = "//table/tbody/tr[10]/td/table/tbody/tr[20]/td[2]" RefName = "ValidationIdInCouponSerialNumberPage"></Obj>
+<Obj ObjName = "//table/tbody/tr[10]/td/table/tbody/tr[21]/td[2]" RefName = "OrderIdInCouponSerialNumberPage"></Obj>
+<Obj ObjName = "ASYNC_COUPON_REDEMPTION_INVALIED_SUBSCRIBER_NUMBER" RefName = "InvaliedSubscriberNumber"></Obj>
+<Obj ObjName = "//table/tbody/tr[10]/td/table/tbody/tr[18]/td[2]" RefName = "BlockedByFieldInCouponSerialNumberPage"></Obj>
+<Obj ObjName = "get-DistributorAmountAfterRecharge" RefName = "DistributorAmountAferRechargeInDB"></Obj>
+<Obj ObjName = "ResponseTextNode" RefName = "ResponseTextNode"></Obj>
+<Obj ObjName = "//a/img[@name=&apos;couponprofilemodification&apos;]" RefName = "CouponProfileModificationSubTabInCouponProfileCreationPage"></Obj>
+<Obj ObjName = "//input[@name=&apos;couponProfileName&apos;]" RefName = "CouponProfilenameEditInCouponProfileModification "></Obj>
+<Obj ObjName = "//table/tbody/tr[5]/td/form/table[2]/tbody/tr[2]/td[3]" RefName = "CouponBrandName"></Obj>
+<Obj ObjName = "42" RefName = "MerchantID"></Obj>
+<Obj ObjName = "2" RefName = "SubscriberNumberForResponse"></Obj>
+<Obj ObjName = "//select[@name=&apos;level&apos;]" RefName = "levelDropDownInDistributors"></Obj>
+<Obj ObjName = "PROMOTION_NAME" RefName = "promotionProfilename"></Obj>
+<Obj ObjName = "//form/table/tbody/tr[2]/td[2]/table[3]/tbody/tr[9]/td/table/tbody" RefName = "DistributorProfileRootTable"></Obj>
+<Obj ObjName = "Dummy" RefName = "Dummy"></Obj>
+<Obj ObjName = "//select[@name=&apos;replenish&apos;]" RefName = "Partner_ReplenishDropDown"></Obj>
+<Obj ObjName = "//img[@name=&apos;loginImage&apos;]" RefName = "Partner_LoginAgain"></Obj>
+<Obj ObjName = "//img[@name=&apos;img6&apos; and @alt=&apos;View in English&apos;]" RefName = "partner_Login_EnglishButton"></Obj>
+<Obj ObjName = "//input[@name=&apos;login&apos;]" RefName = "partner_LoginName"></Obj>
+<Obj ObjName = "//input[@name=&apos;password&apos;]" RefName = "partner_Password"></Obj>
+<Obj ObjName = "//img[@name=&apos;loginImg&apos;]" RefName = "partner_loginButton"></Obj>
+<Obj ObjName = "//img[@name=&apos;leftPanelImage4&apos;]" RefName = "partner_TransactionsTab"></Obj>
+<Obj ObjName = "//img[@alt=&apos;Submit&apos; and @name=&apos;sortbyImg&apos;]" RefName = "partner_TransactionMonitor_Submit_button"></Obj>
+<Obj ObjName = "http://192.168.149.108:8180/airmanage/partner/login.jsp" RefName = "Partner_108_EcuadorUrl"></Obj>
+<Obj ObjName = "//img[@name=&apos;leftPanelImage0&apos;]" RefName = "partner_ProfileTab"></Obj>
+<Obj ObjName = "//table/tbody/tr[4]/td[2]/table[1]/tbody/tr[8]/td[4]" RefName = "partner_AccountBalance"></Obj>
+<Obj ObjName = "//img[@name=&apos;img7&apos;]" RefName = "partner_Logout"></Obj>
+<Obj ObjName = "//table[3]/tbody/tr[9]/td/table/tbody/tr[2]/td[1]" RefName = "DistributorIdentityinprofilePage"></Obj>
+<Obj ObjName = "//table/tbody/tr[4]/td[2]/table[2]/tbody/tr[2]/td[7]" RefName = "partnerLoginProfile_SubDistributor_AccountBalance"></Obj>
+<Obj ObjName = "//input[@name=&apos;orderId&apos;]" RefName = "partner_OraderIdEditBox"></Obj>
+<Obj ObjName = "//a/img[@name=&apos;leftPanelImage3&apos;]" RefName = "Admin_EpinMangementTab"></Obj>
+<Obj ObjName = "//a/img[@name=&apos;leftPanelImage4&apos;]" RefName = "Admin_DistributionMangementTab"></Obj>
+<Obj ObjName = "//a/img[@name=&apos;leftPanelImage5&apos;]" RefName = "Admin_CouponManagementTab"></Obj>
+<Obj ObjName = "//a/img[@name=&apos;leftPanelImage6&apos;]" RefName = "Admin_TransactionMonitorTab"></Obj>
+<Obj ObjName = "//a/img[@name=&apos;leftPanelImage7&apos;]" RefName = "Admin_FraudMangementTab"></Obj>
+<Obj ObjName = "//a/img[@name=&apos;leftPanelImage8&apos;]" RefName = "Admin_PromotionsTab"></Obj>
+<Obj ObjName = "//a/img[@name=&apos;leftPanelImage10&apos;]" RefName = "Admin_customersupport_Link"></Obj>
+<Obj ObjName = "readFromProperityFile" RefName = "readFromProperityFile"></Obj>
+<Obj ObjName = "//input[@name=&apos;chkBox11&apos;]" RefName = "ATMReplenishmentChannelCheckBox"></Obj>
+<Obj ObjName = "//img[@name=&apos;fraudlockedsubscribers_tm&apos;]" RefName = "FraudLockSubscriberLink"></Obj>
+<Obj ObjName = "//input[@name=&apos;subId&apos;]" RefName = "FraudSubscriberEditBox"></Obj>
+<Obj ObjName = "//img[@name=&apos;submitImg&apos;]" RefName = "SubMitButton_FraudRule"></Obj>
+<Obj ObjName = "//input[@name=&apos;chk0&apos;]" RefName = "FraudSubScriberCheckBox"></Obj>
+<Obj ObjName = "//img[@name=&apos;unlockImg&apos;]" RefName = "UnlockButton"></Obj>
+</Object-Repository>
+</ObjRef>

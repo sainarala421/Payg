@@ -1,0 +1,7 @@
+ExcelPath=D:\mexicoAuto\PM_MXN_WebDriver\MxTestScripts\MXN_Aug_17_2014_allScripts.xls
+InputSheetname=Channels
+FunctionSheetName=Functions
+ObjectSheetname=Object-Repository
+TCFolder=D:\PaymentManager\TestAutomation\Modules\Channels\HTMLtoExcel_Converter\HTMLTestCase\ECHOInvalidMessageID.html
+FunctionFolder=D:\PaymentManager\TestAutomation\Modules\Channels\HTMLtoExcel_Converter\Functions
+

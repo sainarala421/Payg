@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Input>
+<PaymentManager>
+<Channels>
+<TC Id = "PM_Ecuador_Bni_RechargeRequest_0001" Depend = "" Description = " Verify successful  ATM BNI Recharge Request">
+<Step Action = "open" RefObj = "Url108" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LanguageLink" Val = ""></Step>
+<Step Action = "type" RefObj = "pmLoginUserName" Val = "superadmin"></Step>
+<Step Action = "type" RefObj = "PasswordEdit" Val = "log11cal"></Step>
+<Step Action = "clickAndWait" RefObj = "loginButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_DistributionMangementTab" Val = ""></Step>
+<Step Action = "type" RefObj = "PartnerContent" Val = "readProperty-BNI_Distributor"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "readFromProperityFile" Val = "readProperty-BNI_Distributor"></Step>
+<Step Action = "storeSelectedValue" RefObj = "AccountBalance" Val = "DistributorAccountbalance"></Step>
+<IVRRequest>
+<Field ID = "Transaction Name" Val = "BNIRecharge"></Field>
+<Field ID = "Package" Val = "IVRBNI"></Field>
+<Field ID = "SubScriberNum" Val = "readProperty-IVR_SUBSCRIBER_NUMBER"></Field>
+<Field ID = "DenominationValue" Val = "2"></Field>
+</IVRRequest>
+<Expected ExpAction = "verifyFromWebSimulator" ExpRefName = "tranasctionmessage" ExpVal = "ERRCDE=000" ></Expected>
+<Step Action = "storeValueFromWebSimulator" RefObj = "tranasctionmessage" Val = "CTRNNO"></Step>
+<Step Action = "storeValueFromWebSimulator" RefObj = "tranasctionmessage" Val = "BTRNNO"></Step>
+<Step Action = "storeValueFromIvrRequest" RefObj = "tranasctionmessage" Val = "SubScriberNum"></Step>
+<Step Action = "storeValueFromIvrRequest" RefObj = "tranasctionmessage" Val = "DenominationValue"></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_TransactionMonitorTab" Val = ""></Step>
+<Step Action = "type" RefObj = "TransactionIDTextBox" Val = "get-CTRNNO"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Expected ExpAction = "verifyTable" ExpRefName = "TrancactionTable" ExpVal = "get-SubScriberNum,ECUTM_CellularPhoneNumber" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "TrancactionTable" ExpVal = "get-CTRNNO,ECUTM_TransactionNumber" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "TrancactionTable" ExpVal = "get-BTRNNO,ECUTM_PaymentRefNo" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "TrancactionTable" ExpVal = "fetch-DenominationValue,ECUTM_TransactionAmount" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "TrancactionTable" ExpVal = "Active,ECUTM_Status" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "TrancactionTable" ExpVal = "UNIBANCO,ECUTM_DistributorId" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "TrancactionTable" ExpVal = "ATM,ECUTM_ReplenishmentChannel" ></Expected>
+<Step Action = "clickAndWait" RefObj = "Admin_DistributionMangementTab" Val = ""></Step>
+<Step Action = "type" RefObj = "PartnerContent" Val = "readProperty-BNI_Distributor"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "readFromProperityFile" Val = "readProperty-BNI_Distributor"></Step>
+<Expected ExpAction = "verifyText" ExpRefName = "AccountBalance" ExpVal = "get-DistributorAccountbalance:subtraction:get-DenominationValue" ></Expected>
+<Step Action = "clickAndWait" RefObj = "LogoutButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LoginAgainButton" Val = ""></Step>
+<ExpectedResult>IVR ATM BNI Recharge Request should be Success</ExpectedResult>
+<ActualResult_Pass>IVR ATM BNI Recharge Request should be Success</ActualResult_Pass>
+<ActualResult_Fail>IVR ATM BNI Recharge Request Fail</ActualResult_Fail>
+</TC>
+<TC Id = "PM_Ecuador_Distributor_BNI_RechargeReversalRequest_0002" Depend = "" Description = " Verify successful  ATM Recharge Transaction Reversal Request">
+<Step Action = "open" RefObj = "Url108" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LanguageLink" Val = ""></Step>
+<Step Action = "type" RefObj = "pmLoginUserName" Val = "superadmin"></Step>
+<Step Action = "type" RefObj = "PasswordEdit" Val = "log11cal"></Step>
+<Step Action = "clickAndWait" RefObj = "loginButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_DistributionMangementTab" Val = ""></Step>
+<Step Action = "type" RefObj = "PartnerContent" Val = "readProperty-BNI_Distributor"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "readFromProperityFile" Val = "readProperty-BNI_Distributor"></Step>
+<Step Action = "storeSelectedValue" RefObj = "AccountBalance" Val = "DistributorAccountbalance"></Step>
+<IVRRequest>
+<Field ID = "Transaction Name" Val = "BNIRecharge"></Field>
+<Field ID = "Package" Val = "IVRBNI"></Field>
+<Field ID = "SubScriberNum" Val = "readProperty-IVR_SUBSCRIBER_NUMBER"></Field>
+<Field ID = "DenominationValue" Val = "2"></Field>
+</IVRRequest>
+<Expected ExpAction = "verifyFromWebSimulator" ExpRefName = "tranasctionmessage" ExpVal = "ERRCDE=000" ></Expected>
+<Step Action = "storeValueFromWebSimulator" RefObj = "tranasctionmessage" Val = "CTRNNO"></Step>
+<Step Action = "storeValueFromWebSimulator" RefObj = "tranasctionmessage" Val = "BTRNNO"></Step>
+<IVRRequest>
+<Field ID = "Transaction Name" Val = "BNIRechargeReversal"></Field>
+<Field ID = "Package" Val = "IVRBNI"></Field>
+<Field ID = "SubScriberNum" Val = "readProperty-IVR_SUBSCRIBER_NUMBER"></Field>
+<Field ID = "DenominationValue" Val = "2"></Field>
+<Field ID = "CTRNNO" Val = "get-CTRNNO"></Field>
+<Field ID = "BTRNNO" Val = "get-BTRNNO"></Field>
+</IVRRequest>
+<Expected ExpAction = "verifyFromWebSimulator" ExpRefName = "tranasctionmessage" ExpVal = "ERRCDE=000" ></Expected>
+<Step Action = "storeValueFromIvrRequest" RefObj = "tranasctionmessage" Val = "SubScriberNum"></Step>
+<Step Action = "storeValueFromIvrRequest" RefObj = "tranasctionmessage" Val = "DenominationValue"></Step>
+<Step Action = "storeValueFromWebSimulator" RefObj = "tranasctionmessage" Val = "CTRNNO"></Step>
+<Step Action = "storeValueFromWebSimulator" RefObj = "tranasctionmessage" Val = "BTRNNO"></Step>
+<Step Action = "DBConnect" RefObj = "DBName" Val = "TransactionNumber:SELECT C_TRANSACTION_ID FROM T_SETTLEMENT_TRANSACTION ss where ss.C_PARENT_TRANSACTION_ID='get-CTRNNO'"></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_TransactionMonitorTab" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "ReversalTransactionReport" Val = ""></Step>
+<Step Action = "type" RefObj = "TransactionIDTextBox" Val = "get-TransactionNumber"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Expected ExpAction = "verifyTable" ExpRefName = "ReversalTransactionTable" ExpVal = "get-TransactionNumber,ECUREV_TransactionNumber" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "ReversalTransactionTable" ExpVal = "get-CTRNNO,ECUREV_OriginalTransactionNumber" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "ReversalTransactionTable" ExpVal = "UNIBANCO,ECUREV_InitiatedBy" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "ReversalTransactionTable" ExpVal = "get-SubScriberNum,ECUREV_CellularNumber" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "ReversalTransactionTable" ExpVal = "ATM,ECUREV_ReplenishmentChannel" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "ReversalTransactionTable" ExpVal = "fetch-DenominationValue,ECUREV_TransactionAmount" ></Expected>
+<Step Action = "clickAndWait" RefObj = "Admin_DistributionMangementTab" Val = ""></Step>
+<Step Action = "type" RefObj = "PartnerContent" Val = "readProperty-BNI_Distributor"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "readFromProperityFile" Val = "readProperty-BNI_Distributor"></Step>
+<Expected ExpAction = "verifyText" ExpRefName = "AccountBalance" ExpVal = "get-DistributorAccountbalance" ></Expected>
+<Step Action = "clickAndWait" RefObj = "LogoutButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LoginAgainButton" Val = ""></Step>
+<ExpectedResult>IVR ATM BNI Recharge Reversal Request should be Success</ExpectedResult>
+<ActualResult_Pass>IVR ATM BNI Recharge Reversal Request should be Success</ActualResult_Pass>
+<ActualResult_Fail>IVR ATM BNI Recharge Reversal Request Fail</ActualResult_Fail>
+</TC>
+<TC Id = "PM_Ecuador_Distributor_IVR_IVR_AccreditationOfMinutesRequest_0006" Depend = "" Description = " Verify successful  ATM BNI(Promotion Request) AccreditationOfMinutesRequest">
+<Step Action = "open" RefObj = "Url108" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LanguageLink" Val = ""></Step>
+<Step Action = "type" RefObj = "pmLoginUserName" Val = "superadmin"></Step>
+<Step Action = "type" RefObj = "PasswordEdit" Val = "log11cal"></Step>
+<Step Action = "clickAndWait" RefObj = "loginButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_DistributionMangementTab" Val = ""></Step>
+<Step Action = "type" RefObj = "PartnerContent" Val = "readProperty-BNI_Distributor"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "readFromProperityFile" Val = "readProperty-BNI_Distributor"></Step>
+<Step Action = "storeSelectedValue" RefObj = "AccountBalance" Val = "DistributorAccountbalance"></Step>
+<Step Action = "DeleteQuery" RefObj = "DBName" Val = "update T_PROMOTIONS set C_PROMOTION_STATUS='2' where C_PROMOTION_STATUS='1'"></Step>
+<Step Action = "DeleteQuery" RefObj = "DBName" Val = "update T_PROMOTIONS set C_PROMOTION_STATUS='1' where C_PROMOTION_DECRIPTION='readProperty-PROMOTION_NAME'"></Step>
+<Step Action = "DBConnect" RefObj = "DBName" Val = "promotionID:select C_PROMOTION_ID from T_PROMOTIONS where C_PROMOTION_DECRIPTION='readProperty-PROMOTION_NAME'"></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_PromotionsTab" Val = ""></Step>
+<Step Action = "type" RefObj = "promotionSearchEdit" Val = "readProperty-PROMOTION_NAME"></Step>
+<Step Action = "clickAndWait" RefObj = "PromtionSearchSubmitButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "PromotionModifyButtonNew" Val = ""></Step>
+<Step Action = "storeSelectedValue" RefObj = "existingPromotionAmount" Val = "PromotionAmount"></Step>
+<Step Action = "storeText" RefObj = "ApplicablePromotionAmountNew" Val = "promotionApplicableAmount"></Step>
+<Step Action = "DBConnect" RefObj = "DBName" Val = "promotionActualValue:select C_PROMOTION_DENOM_VALUE
+from T_PROMOTION_DENOM
+where C_PROMOTION_ID='get-promotionID'"></Step>
+<Step Action = "DeleteQuery" RefObj = "DBName" Val = "update T_PROMOTIONS_CHANNELS set C_REPLENISHMENT_CHANNEL_ID='2'where C_PROMOTION_ID='get-promotionID'"></Step>
+<IVRRequest>
+<Field ID = "Transaction Name" Val = "BNIRecharge"></Field>
+<Field ID = "Package" Val = "IVRBNI"></Field>
+<Field ID = "SubScriberNum" Val = "readProperty-IVR_SUBSCRIBER_NUMBER"></Field>
+<Field ID = "DenominationValue" Val = "2"></Field>
+</IVRRequest>
+<Expected ExpAction = "verifyFromWebSimulator" ExpRefName = "tranasctionmessage" ExpVal = "ERRCDE=000" ></Expected>
+<Step Action = "storeValueFromWebSimulator" RefObj = "tranasctionmessage" Val = "CTRNNO"></Step>
+<Step Action = "storeValueFromWebSimulator" RefObj = "tranasctionmessage" Val = "BTRNNO"></Step>
+<Step Action = "storeValueFromIvrRequest" RefObj = "tranasctionmessage" Val = "SubScriberNum"></Step>
+<Step Action = "storeValueFromIvrRequest" RefObj = "tranasctionmessage" Val = "DenominationValue"></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_TransactionMonitorTab" Val = ""></Step>
+<Step Action = "type" RefObj = "TransactionIDTextBox" Val = "get-CTRNNO"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Step Action = "clickOnly" RefObj = "transactionNumberLinkInTransactionMonitorPage" Val = ""></Step>
+<Step Action = "selectWindow" RefObj = "transactionMonitorWindowPopupName" Val = ""></Step>
+<Expected ExpAction = "verifyTable" ExpRefName = "transactionMonitorPopupWindowTable" ExpVal = "get-CTRNNO,ECTMTP_TransactionNumber" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "transactionMonitorPopupWindowTable" ExpVal = "get-promotionApplicableAmount,ECTMTP_PromotionAmount" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "transactionMonitorPopupWindowTable" ExpVal = "ATM,ECTMTP_ReplenishmentChannel" ></Expected>
+<Step Action = "clickOnly" RefObj = "okButtonTransactionMonitorpopupPage" Val = ""></Step>
+<Step Action = "selectWindow" RefObj = "ParentWindow" Val = ""></Step>
+<Step Action = "storeBalance" RefObj = "PromotionValueEdit" Val = "Amount_After_Charge=get-PromotionAmount:subtraction:get-promotionApplicableAmount"></Step>
+<Step Action = "DBConnect" RefObj = "DBName" Val = "promotionActualValue:select C_REDUCED_PROM_VAL from T_PROMOTIONS where C_PROMOTION_ID='get-promotionID'"></Step>
+<Expected ExpAction = "verifyBalanceValues" ExpRefName = "dbValues" ExpVal = "get-Amount_After_Charge:get-promotionActualValue" ></Expected>
+<Step Action = "clickAndWait" RefObj = "Admin_DistributionMangementTab" Val = ""></Step>
+<Step Action = "type" RefObj = "PartnerContent" Val = "readProperty-BNI_Distributor"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "readFromProperityFile" Val = "readProperty-BNI_Distributor"></Step>
+<Expected ExpAction = "verifyText" ExpRefName = "AccountBalance" ExpVal = "get-DistributorAccountbalance:subtraction:get-DenominationValue" ></Expected>
+<Step Action = "clickAndWait" RefObj = "LogoutButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LoginAgainButton" Val = ""></Step>
+<ExpectedResult>IVR ATM BNI Promotion Request should be Success</ExpectedResult>
+<ActualResult_Pass>IVR ATM BNI Promotion Request should be Success</ActualResult_Pass>
+<ActualResult_Fail>IVR ATM BNI Promotion Request Not Success</ActualResult_Fail>
+</TC>
+<TC Id = "PM_Ecuador_Distributor_IVR_MinMax_AccreditationOfMinutesRequest_0007" Depend = "" Description = " Verify un successful  ATM BNI Request(Recharge amount not with in Min Max range)">
+<Step Action = "open" RefObj = "Url108" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LanguageLink" Val = ""></Step>
+<Step Action = "type" RefObj = "pmLoginUserName" Val = "superadmin"></Step>
+<Step Action = "type" RefObj = "PasswordEdit" Val = "log11cal"></Step>
+<Step Action = "clickAndWait" RefObj = "loginButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_DistributionMangementTab" Val = ""></Step>
+<Step Action = "type" RefObj = "PartnerContent" Val = "readProperty-BNI_Distributor"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "readFromProperityFile" Val = "readProperty-BNI_Distributor"></Step>
+<Step Action = "storeSelectedValue" RefObj = "AccountBalance" Val = "DistributorAccountbalance"></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_FraudMangementTab" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "minmaxrangelimitsTabInFraudManagementRulesPages" Val = ""></Step>
+<Step Action = "isChecked" RefObj = "ATMReplenishmentChannelCheckBox" Val = ""></Step>
+<Step Action = "type" RefObj = "BankMinValueEdit" Val = "2.00"></Step>
+<Step Action = "type" RefObj = "BankMaxValueEdit" Val = "101.00"></Step>
+<Step Action = "clickAndWait" RefObj = "MinMaxSubmitButton" Val = ""></Step>
+<IVRRequest>
+<Field ID = "Transaction Name" Val = "BNIRecharge"></Field>
+<Field ID = "Package" Val = "IVRBNI"></Field>
+<Field ID = "SubScriberNum" Val = "readProperty-IVR_SUBSCRIBER_NUMBER"></Field>
+<Field ID = "DenominationValue" Val = "1"></Field>
+</IVRRequest>
+<Expected ExpAction = "verifyFromWebSimulator" ExpRefName = "tranasctionmessage" ExpVal = "ERRCDE=005" ></Expected>
+<Step Action = "storeValueFromWebSimulator" RefObj = "tranasctionmessage" Val = "BTRNNO"></Step>
+<Step Action = "storeValueFromIvrRequest" RefObj = "tranasctionmessage" Val = "SubScriberNum"></Step>
+<Step Action = "storeValueFromIvrRequest" RefObj = "tranasctionmessage" Val = "DenominationValue"></Step>
+<Step Action = "DBConnect" RefObj = "DBName" Val = "comments: SELECT *
+  FROM (SELECT   C_ERROR_DESC
+        FROM T_REJECT_REASON_T 
+        WHERE C_CUSTOMER_ID = 'get-SubScriberNum' and C_DISTRIBUTOR_ID='readProperty-BNI_Distributor'
+        ORDER BY C_REASON_ID DESC)
+ WHERE ROWNUM = 1"></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_TransactionMonitorTab" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "rejectedtransactionstab" Val = ""></Step>
+<Step Action = "select" RefObj = "replenishmentChannelDropDown" Val = "label=ATM"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Expected ExpAction = "verifyTable" ExpRefName = "RejectedTransactionsTable" ExpVal = "readProperty-BNI_Distributor,ECURM_DistributorId" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "RejectedTransactionsTable" ExpVal = "fetch-DenominationValue,ECURM_TransactionAmount" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "RejectedTransactionsTable" ExpVal = "get-comments,ECURM_TransactionErrorDescription" ></Expected>
+<Step Action = "clickAndWait" RefObj = "Admin_DistributionMangementTab" Val = ""></Step>
+<Step Action = "type" RefObj = "PartnerContent" Val = "readProperty-BNI_Distributor"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "readFromProperityFile" Val = "readProperty-BNI_Distributor"></Step>
+<Expected ExpAction = "verifyText" ExpRefName = "AccountBalance" ExpVal = "get-DistributorAccountbalance" ></Expected>
+<Step Action = "clickAndWait" RefObj = "Admin_FraudMangementTab" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "minmaxrangelimitsTabInFraudManagementRulesPages" Val = ""></Step>
+<Step Action = "isChecked" RefObj = "ATMReplenishmentChannelCheckBox" Val = ""></Step>
+<Step Action = "type" RefObj = "BankMinValueEdit" Val = "0.00"></Step>
+<Step Action = "type" RefObj = "BankMaxValueEdit" Val = "101.00"></Step>
+<Step Action = "clickAndWait" RefObj = "MinMaxSubmitButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LogoutButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LoginAgainButton" Val = ""></Step>
+<ExpectedResult>IVR ATM Accreditation Of Minutes Request should be Fail</ExpectedResult>
+<ActualResult_Pass>IVR ATM Accreditation Of Minutes Request should be Fail</ActualResult_Pass>
+<ActualResult_Fail>IVR ATM Accreditation Of Minutes Request should be Fail</ActualResult_Fail>
+</TC>
+<TC Id = "PM_Ecuador_Distributor_IVR_Fraud_SubScriber_AccreditationOfMinutesRequest_0008" Depend = "" Description = " Verify un successful  ATM BNIRequest(Fraud Sub Scriber)">
+<Step Action = "open" RefObj = "Url108" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LanguageLink" Val = ""></Step>
+<Step Action = "type" RefObj = "pmLoginUserName" Val = "superadmin"></Step>
+<Step Action = "type" RefObj = "PasswordEdit" Val = "log11cal"></Step>
+<Step Action = "clickAndWait" RefObj = "loginButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_DistributionMangementTab" Val = ""></Step>
+<Step Action = "type" RefObj = "PartnerContent" Val = "readProperty-BNI_Distributor"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "readFromProperityFile" Val = "readProperty-BNI_Distributor"></Step>
+<Step Action = "storeSelectedValue" RefObj = "AccountBalance" Val = "DistributorAccountbalance"></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_FraudMangementTab" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "FraudLockSubscriberLink" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "addImageButton" Val = ""></Step>
+<Step Action = "type" RefObj = "FraudSubscriberEditBox" Val = "readProperty-IVR_SUBSCRIBER_NUMBER"></Step>
+<Step Action = "clickAndWait" RefObj = "promotionSaveImg" Val = ""></Step>
+<IVRRequest>
+<Field ID = "Transaction Name" Val = "BNIRecharge"></Field>
+<Field ID = "Package" Val = "IVRBNI"></Field>
+<Field ID = "SubScriberNum" Val = "readProperty-IVR_SUBSCRIBER_NUMBER"></Field>
+<Field ID = "DenominationValue" Val = "1"></Field>
+</IVRRequest>
+<Expected ExpAction = "verifyFromWebSimulator" ExpRefName = "tranasctionmessage" ExpVal = "ERRCDE=026" ></Expected>
+<Step Action = "storeValueFromWebSimulator" RefObj = "tranasctionmessage" Val = "BTRNNO"></Step>
+<Step Action = "storeValueFromIvrRequest" RefObj = "tranasctionmessage" Val = "SubScriberNum"></Step>
+<Step Action = "storeValueFromIvrRequest" RefObj = "tranasctionmessage" Val = "DenominationValue"></Step>
+<Step Action = "DBConnect" RefObj = "DBName" Val = "comments: SELECT *
+  FROM (SELECT   C_ERROR_DESC
+        FROM T_REJECT_REASON_T 
+        WHERE C_CUSTOMER_ID = 'get-SubScriberNum' and C_DISTRIBUTOR_ID='readProperty-BNI_Distributor'
+        ORDER BY C_REASON_ID DESC)
+ WHERE ROWNUM = 1"></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_TransactionMonitorTab" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "rejectedtransactionstab" Val = ""></Step>
+<Step Action = "select" RefObj = "replenishmentChannelDropDown" Val = "label=ATM"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Expected ExpAction = "verifyTable" ExpRefName = "RejectedTransactionsTable" ExpVal = "readProperty-BNI_Distributor,ECURM_DistributorId" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "RejectedTransactionsTable" ExpVal = "fetch-DenominationValue,ECURM_TransactionAmount" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "RejectedTransactionsTable" ExpVal = "get-comments,ECURM_TransactionErrorDescription" ></Expected>
+<Step Action = "clickAndWait" RefObj = "Admin_DistributionMangementTab" Val = ""></Step>
+<Step Action = "type" RefObj = "PartnerContent" Val = "readProperty-BNI_Distributor"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "readFromProperityFile" Val = "readProperty-BNI_Distributor"></Step>
+<Expected ExpAction = "verifyText" ExpRefName = "AccountBalance" ExpVal = "get-DistributorAccountbalance" ></Expected>
+<Step Action = "clickAndWait" RefObj = "Admin_FraudMangementTab" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "FraudLockSubscriberLink" Val = ""></Step>
+<Step Action = "type" RefObj = "FraudSubscriberEditBox" Val = "readProperty-IVR_SUBSCRIBER_NUMBER"></Step>
+<Step Action = "clickAndWait" RefObj = "SubMitButton_FraudRule" Val = ""></Step>
+<Step Action = "isChecked" RefObj = "FraudSubScriberCheckBox" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "UnlockButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LogoutButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LoginAgainButton" Val = ""></Step>
+<ExpectedResult>IVR ATM Accreditation Of Minutes Request should be Fail</ExpectedResult>
+<ActualResult_Pass>IVR ATM Accreditation Of Minutes Request should be Fail</ActualResult_Pass>
+<ActualResult_Fail>IVR ATM Accreditation Of Minutes Request should be Fail</ActualResult_Fail>
+</TC>
+<TC Id = "PM_Ecuador_Distributor_IVR_Denomination InActive_AccreditationOfMinutesRequest_0009" Depend = "" Description = " Verify un successful  ATM BNIRequest(Denomination InActive)">
+<Step Action = "open" RefObj = "Url108" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LanguageLink" Val = ""></Step>
+<Step Action = "type" RefObj = "pmLoginUserName" Val = "superadmin"></Step>
+<Step Action = "type" RefObj = "PasswordEdit" Val = "log11cal"></Step>
+<Step Action = "clickAndWait" RefObj = "loginButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_DistributionMangementTab" Val = ""></Step>
+<Step Action = "type" RefObj = "PartnerContent" Val = "readProperty-BNI_Distributor"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "readFromProperityFile" Val = "readProperty-BNI_Distributor"></Step>
+<Step Action = "storeSelectedValue" RefObj = "AccountBalance" Val = "DistributorAccountbalance"></Step>
+<Step Action = "DeleteQuery" RefObj = "DBName" Val = "UPDATE T_PIN_DENOMINATION SET C_DENOMINATION_STATUS='2' 
+ WHERE C_DENOMINATION_VALUE='2'
+ "></Step>
+<Step Action = "DeleteQuery" RefObj = "DBName" Val = " UPDATE T_PIN_DENOMINATION SET C_DENOMINATION_STATUS='2' 
+ WHERE C_DENOMINATION_PLANID='15e'"></Step>
+<IVRRequest>
+<Field ID = "Transaction Name" Val = "BNIRecharge"></Field>
+<Field ID = "Package" Val = "IVRBNI"></Field>
+<Field ID = "SubScriberNum" Val = "readProperty-IVR_SUBSCRIBER_NUMBER"></Field>
+<Field ID = "DenominationValue" Val = "2"></Field>
+</IVRRequest>
+<Expected ExpAction = "verifyFromWebSimulator" ExpRefName = "tranasctionmessage" ExpVal = "ERRCDE=003" ></Expected>
+<Step Action = "storeValueFromWebSimulator" RefObj = "tranasctionmessage" Val = "BTRNNO"></Step>
+<Step Action = "storeValueFromIvrRequest" RefObj = "tranasctionmessage" Val = "SubScriberNum"></Step>
+<Step Action = "storeValueFromIvrRequest" RefObj = "tranasctionmessage" Val = "DenominationValue"></Step>
+<Step Action = "DBConnect" RefObj = "DBName" Val = "comments: SELECT *
+  FROM (SELECT   C_ERROR_DESC
+        FROM T_REJECT_REASON_T 
+        WHERE C_CUSTOMER_ID = 'get-SubScriberNum' and C_DISTRIBUTOR_ID='readProperty-BNI_Distributor'
+        ORDER BY C_REASON_ID DESC)
+ WHERE ROWNUM = 1"></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_TransactionMonitorTab" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "rejectedtransactionstab" Val = ""></Step>
+<Step Action = "select" RefObj = "replenishmentChannelDropDown" Val = "label=ATM"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Expected ExpAction = "verifyTable" ExpRefName = "RejectedTransactionsTable" ExpVal = "readProperty-BNI_Distributor,ECURM_DistributorId" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "RejectedTransactionsTable" ExpVal = "fetch-DenominationValue,ECURM_TransactionAmount" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "RejectedTransactionsTable" ExpVal = "get-comments,ECURM_TransactionErrorDescription" ></Expected>
+<Step Action = "clickAndWait" RefObj = "Admin_DistributionMangementTab" Val = ""></Step>
+<Step Action = "type" RefObj = "PartnerContent" Val = "readProperty-BNI_Distributor"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "readFromProperityFile" Val = "readProperty-BNI_Distributor"></Step>
+<Expected ExpAction = "verifyText" ExpRefName = "AccountBalance" ExpVal = "get-DistributorAccountbalance" ></Expected>
+<Step Action = "DeleteQuery" RefObj = "DBName" Val = "UPDATE T_PIN_DENOMINATION SET C_DENOMINATION_STATUS='1' 
+ WHERE C_DENOMINATION_VALUE='2'
+ "></Step>
+<Step Action = "DeleteQuery" RefObj = "DBName" Val = " UPDATE T_PIN_DENOMINATION SET C_DENOMINATION_STATUS='1' 
+ WHERE C_DENOMINATION_PLANID='15e'"></Step>
+<Step Action = "clickAndWait" RefObj = "LogoutButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LoginAgainButton" Val = ""></Step>
+<ExpectedResult>IVR ATM BNI Request should be Fail</ExpectedResult>
+<ActualResult_Pass>IVR ATM BNI Request should be Fail</ActualResult_Pass>
+<ActualResult_Fail>IVR ATM BNI Request should be Fail</ActualResult_Fail>
+</TC>
+</Channels>
+</PaymentManager>
+</Input>

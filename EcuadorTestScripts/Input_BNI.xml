@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Input>
+<PaymentManager>
+<Channels>
+<TC Id = "PM_Ecuador_Distributor_IVR_IVR_AccreditationOfMinutesRequest_0001" Depend = "" Description = " Verify successful  ATM AccreditationOfMinutesRequest">
+<Step Action = "open" RefObj = "Url108" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LanguageLink" Val = ""></Step>
+<!--Step Action = "type" RefObj = "pmLoginUserName" Val = "superadmin"></Step>
+<Step Action = "type" RefObj = "PasswordEdit" Val = "log11cal"></Step>
+<Step Action = "clickAndWait" RefObj = "loginButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_DistributionMangementTab" Val = ""></Step>
+<Step Action = "type" RefObj = "PartnerContent" Val = "readProperty-ATM_Distributor"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "readFromProperityFile" Val = "readProperty-ATM_Distributor"></Step>
+<Step Action = "storeSelectedValue" RefObj = "AccountBalance" Val = "DistributorAccountbalance"></Step-->
+<IVRRequest>
+<Field ID = "Transaction Name" Val = "BNIRecharge"></Field>
+<Field ID = "Package" Val = "IVRBNI"></Field>
+<Field ID = "SubScriberNum" Val = "readProperty-IVR_SUBSCRIBER_NUMBER"></Field>
+<Field ID = "DenominationValue" Val = "2"></Field>
+</IVRRequest>
+<Expected ExpAction = "verifyFromWebSimulator" ExpRefName = "tranasctionmessage" ExpVal = "ERRCDE=000" ></Expected>
+<Step Action = "storeValueFromWebSimulator" RefObj = "tranasctionmessage" Val = "CTRNNO"></Step>
+<Step Action = "storeValueFromWebSimulator" RefObj = "tranasctionmessage" Val = "BTRNNO"></Step>
+<IVRRequest>
+<Field ID = "Transaction Name" Val = "BNIRechargeReversal"></Field>
+<Field ID = "Package" Val = "IVRBNI"></Field>
+<Field ID = "SubScriberNum" Val = "readProperty-IVR_SUBSCRIBER_NUMBER"></Field>
+<Field ID = "DenominationValue" Val = "2"></Field>
+<Field ID = "CTRNNO" Val = "get-CTRNNO"></Field>
+<Field ID = "BTRNNO" Val = "get-BTRNNO"></Field>
+</IVRRequest>
+<Step Action = "storeValueFromIvrRequest" RefObj = "tranasctionmessage" Val = "SubScriberNum"></Step>
+<Step Action = "storeValueFromIvrRequest" RefObj = "tranasctionmessage" Val = "DenominationValue"></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_TransactionMonitorTab" Val = ""></Step>
+<Step Action = "type" RefObj = "TransactionIDTextBox" Val = "get-NUMAUT"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Expected ExpAction = "verifyTable" ExpRefName = "TrancactionTable" ExpVal = "get-SubScriberNum,ECUTM_CellularPhoneNumber" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "TrancactionTable" ExpVal = "get-NUMAUT,ECUTM_TransactionNumber" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "TrancactionTable" ExpVal = "get-NUMTRAN,ECUTM_PaymentRefNo" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "TrancactionTable" ExpVal = "fetch-DenominationValue,ECUTM_TransactionAmount" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "TrancactionTable" ExpVal = "Active,ECUTM_Status" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "TrancactionTable" ExpVal = "readProperty-ATM_Distributor,ECUTM_DistributorId" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "TrancactionTable" ExpVal = "ATM,ECUTM_ReplenishmentChannel" ></Expected>
+<Step Action = "clickAndWait" RefObj = "Admin_DistributionMangementTab" Val = ""></Step>
+<Step Action = "type" RefObj = "PartnerContent" Val = "readProperty-ATM_Distributor"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "readFromProperityFile" Val = "readProperty-ATM_Distributor"></Step>
+<Expected ExpAction = "verifyText" ExpRefName = "AccountBalance" ExpVal = "get-DistributorAccountbalance:subtraction:get-DenominationValue" ></Expected>
+<Step Action = "clickAndWait" RefObj = "LogoutButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LoginAgainButton" Val = ""></Step>
+<ExpectedResult>IVR ATM Accreditation Of Minutes Request should be Success</ExpectedResult>
+<ActualResult_Pass>IVR ATM Accreditation Of Minutes Request should be Success</ActualResult_Pass>
+<ActualResult_Fail>IVR ATM Accreditation Of Minutes Request Fail</ActualResult_Fail>
+</TC>
+<TC Id = "PM_Ecuador_Carrier_IVR_ValidateTelephonerequest_ATM_0002" Depend = "" Description = " Verify successful  ATM Validate Telephone request Request">
+<Step Action = "open" RefObj = "Url108" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LanguageLink" Val = ""></Step>
+<Step Action = "type" RefObj = "pmLoginUserName" Val = "superadmin"></Step>
+<Step Action = "type" RefObj = "PasswordEdit" Val = "log11cal"></Step>
+<Step Action = "clickAndWait" RefObj = "loginButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_DistributionMangementTab" Val = ""></Step>
+<Step Action = "type" RefObj = "PartnerContent" Val = "readProperty-ATM_Distributor"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "readFromProperityFile" Val = "readProperty-ATM_Distributor"></Step>
+<Step Action = "storeSelectedValue" RefObj = "AccountBalance" Val = "DistributorAccountbalance"></Step>
+<IVRRequest>
+<Field ID = "Transaction Name" Val = "AtmValidateTelephonerequest"></Field>
+<Field ID = "Package" Val = "IVRATM"></Field>
+<Field ID = "SubScriberNum" Val = "readProperty-IVR_SUBSCRIBER_NUMBER"></Field>
+<Field ID = "DenominationValue" Val = "2"></Field>
+</IVRRequest>
+<Expected ExpAction = "verifyFromAtmWebSimulator" ExpRefName = "tranasctionmessage" ExpVal = "RETORNO=000" ></Expected>
+<Expected ExpAction = "verifyFromAtmWebSimulator" ExpRefName = "tranasctionmessage" ExpVal = "RETMSG=Exito" ></Expected>
+<Step Action = "storeValueFromAtmWebSimulator" RefObj = "tranasctionmessage" Val = "NUMTRAN"></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_DistributionMangementTab" Val = ""></Step>
+<Step Action = "type" RefObj = "PartnerContent" Val = "readProperty-ATM_Distributor"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "readFromProperityFile" Val = "readProperty-ATM_Distributor"></Step>
+<Expected ExpAction = "verifyText" ExpRefName = "AccountBalance" ExpVal = "get-DistributorAccountbalance" ></Expected>
+<Step Action = "clickAndWait" RefObj = "LogoutButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LoginAgainButton" Val = ""></Step>
+<ExpectedResult>Verify successful ATM Validate Telephone request Request</ExpectedResult>
+<ActualResult_Pass>Verify successful ATM Validate Telephone request Request</ActualResult_Pass>
+<ActualResult_Fail>Verify successful ATM Validate Telephone request fail</ActualResult_Fail>
+</TC>
+<TC Id = "PM_Ecuador_Carrier_IVR_AtmPinPurchase_ATM_0003" Depend = "" Description = " Verify successful  ATM Pin Purchase Request">
+<Step Action = "open" RefObj = "Url108" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LanguageLink" Val = ""></Step>
+<Step Action = "type" RefObj = "pmLoginUserName" Val = "superadmin"></Step>
+<Step Action = "type" RefObj = "PasswordEdit" Val = "log11cal"></Step>
+<Step Action = "clickAndWait" RefObj = "loginButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_DistributionMangementTab" Val = ""></Step>
+<Step Action = "type" RefObj = "PartnerContent" Val = "readProperty-ATM_Distributor"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "readFromProperityFile" Val = "readProperty-ATM_Distributor"></Step>
+<Step Action = "storeSelectedValue" RefObj = "AccountBalance" Val = "DistributorAccountbalance"></Step>
+<IVRRequest>
+<Field ID = "Transaction Name" Val = "AtmPinPurchase"></Field>
+<Field ID = "Package" Val = "IVRATM"></Field>
+<Field ID = "DenominationValue" Val = "2"></Field>
+</IVRRequest>
+<Expected ExpAction = "verifyFromAtmWebSimulator" ExpRefName = "tranasctionmessage" ExpVal = "RETORNO=000" ></Expected>
+<Expected ExpAction = "verifyFromAtmWebSimulator" ExpRefName = "tranasctionmessage" ExpVal = "RETMSG=Exito" ></Expected>
+<Step Action = "storeValueFromAtmWebSimulator" RefObj = "tranasctionmessage" Val = "NUMTRAN"></Step>
+<Step Action = "storeValueFromIvrRequest" RefObj = "tranasctionmessage" Val = "DenominationValue"></Step>
+<Step Action = "DBConnect" RefObj = "DBName" Val = "TransId:SELECT C_TRANSACTION_ID FROM T_SETTLEMENT_TRANSACTION ss where ss.C_FIN_INST_REF_NO='get-NUMTRAN'"></Step>
+<Step Action = "clickAndWait" RefObj = "Admin_TransactionMonitorTab" Val = ""></Step>
+<Step Action = "type" RefObj = "TransactionIDTextBox" Val = "get-TransId"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Expected ExpAction = "verifyTable" ExpRefName = "TrancactionTable" ExpVal = "get-TransId,ECUTM_TransactionNumber" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "TrancactionTable" ExpVal = "get-NUMTRAN,ECUTM_PaymentRefNo" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "TrancactionTable" ExpVal = "fetch-DenominationValue,ECUTM_TransactionAmount" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "TrancactionTable" ExpVal = "Active,ECUTM_Status" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "TrancactionTable" ExpVal = "readProperty-ATM_Distributor,ECUTM_DistributorId" ></Expected>
+<Expected ExpAction = "verifyTable" ExpRefName = "TrancactionTable" ExpVal = "ATM,ECUTM_ReplenishmentChannel" ></Expected>
+<Step Action = "clickAndWait" RefObj = "Admin_DistributionMangementTab" Val = ""></Step>
+<Step Action = "type" RefObj = "PartnerContent" Val = "readProperty-ATM_Distributor"></Step>
+<Step Action = "clickAndWait" RefObj = "SubmitImage" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "readFromProperityFile" Val = "readProperty-ATM_Distributor"></Step>
+<Expected ExpAction = "verifyText" ExpRefName = "AccountBalance" ExpVal = "get-DistributorAccountbalance:subtraction:get-DenominationValue" ></Expected>
+<Step Action = "clickAndWait" RefObj = "LogoutButton" Val = ""></Step>
+<Step Action = "clickAndWait" RefObj = "LoginAgainButton" Val = ""></Step>
+<ExpectedResult>IVR ATM Pin Purchase Request Request should be Success</ExpectedResult>
+<ActualResult_Pass>IVR ATM Pin Purchase Request Request should be Success</ActualResult_Pass>
+<ActualResult_Fail>IVR ATM Pin Purchase Request fail</ActualResult_Fail>
+</TC>
+</Channels>
+</PaymentManager>
+</Input>

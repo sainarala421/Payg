@@ -1,0 +1,431 @@
+19/03/2015 18:38:44 devpinoyLogger ======================================= TEST CASE START ======================================================
+19/03/2015 18:38:44 devpinoyLogger ======================================= TEST CASE ID ================================================
+19/03/2015 18:38:44 devpinoyLogger ======================================= PM_Ecuador_Bni_RechargeRequest_0001 =======================================
+19/03/2015 18:38:44 devpinoyLogger ======================================= TEST CASE ID ================================================
+19/03/2015 18:38:44 devpinoyLogger ======================================= TEST CASE DESCRIPTION ================================================
+19/03/2015 18:38:44 devpinoyLogger  Verify successful  ATM BNI Recharge Request
+19/03/2015 18:38:44 devpinoyLogger =======================================================================================
+19/03/2015 18:38:46 devpinoyLogger **Open Url**
+19/03/2015 18:38:46 devpinoyLogger http://192.168.149.108:8180/airmanage/networkadmin/login.jsp
+19/03/2015 18:38:47 devpinoyLogger Click Action Performed On LanguageLink with Locator:: //img[@alt='View in English' and @name='img6']Navigate ToPrepaid Movistar - Please Login!
+19/03/2015 18:38:47 devpinoyLogger Type data In :: pmLoginUserNamewith Locator :: //input[@name='login']And Value :: superadmin
+19/03/2015 18:38:48 devpinoyLogger Type data In :: PasswordEditwith Locator :: //input[@name='password']And Value :: log11cal
+19/03/2015 18:38:55 devpinoyLogger Click Action Performed On loginButton with Locator:: //img[@name='loginImg']Navigate ToPrepaid Movistar - View System Messages
+19/03/2015 18:38:56 devpinoyLogger Click Action Performed On Admin_DistributionMangementTab with Locator:: //a/img[@name='leftPanelImage4']Navigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:38:56 devpinoyLogger Type data In :: PartnerContentwith Locator :: //input[@id='partnerContent']And Value :: UNIBANCO
+19/03/2015 18:38:58 devpinoyLogger Click Action Performed On SubmitImage with Locator:: submitImgNavigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:39:01 devpinoyLogger Click Action Performed On readFromProperityFile with Locator:: UNIBANCONavigate ToPrepaid Movistar - Distributor Profile
+19/03/2015 18:39:01 devpinoyLogger storeSelectedValue in appVal -->9,878.00
+19/03/2015 18:39:01 devpinoyLogger store Selected Value InDistributorAccountbalancewith value9,878.00
+19/03/2015 18:39:01 devpinoyLogger IVR ATM REQUEST:SubScriberNum=0922222222;DenominationValue=2;$
+19/03/2015 18:39:01 devpinoyLogger IVRATM--CSV--Req: SubScriberNum=0922222222;DenominationValue=2;$
+19/03/2015 18:39:01 devpinoyLogger *** BNIRechargeRequest ***
+19/03/2015 18:39:01 devpinoyLogger BNI Request:::LENMSG=0100;MSGNUM=002;BTRNNO=1274467039;NETWID=UNIBANCO;TERMID=1;REQAMT=2;TELNUM=0922222222;OPERATORIDENTITY=00
+19/03/2015 18:39:07 devpinoyLogger BNI Response:::LENMSG=00184;MSGNUM=002;BTRNNO=1274467039;ERRCDE=000;CTRNNO=286364;PPINNO=0;ACCCDT=1.49;PRMAMT=0.00;EXPDAT=18/03/2016;ACTBAL=0.00;TAXICE=0.18;TAXIVA=0.15;SEQNBR=001-087-0166245;OPERATORIDENTITY=00;
+19/03/2015 18:39:31 devpinoyLogger Click Action Performed On Admin_TransactionMonitorTab with Locator:: //a/img[@name='leftPanelImage6']Navigate ToPrepaid Movistar - Transaction Monitor
+19/03/2015 18:39:32 devpinoyLogger Type data In :: TransactionIDTextBoxwith Locator :: //input[@name='transId']And Value :: 286364
+19/03/2015 18:39:37 devpinoyLogger Click Action Performed On SubmitImage with Locator:: submitImgNavigate ToPrepaid Movistar - Transaction Monitor
+19/03/2015 18:39:37 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:39:37 devpinoyLogger Cellular Phone Number--> ValueExpected value: 0922222222 Actual value: 0922222222
+19/03/2015 18:39:37 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:39:38 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:39:38 devpinoyLogger Transaction Number--> ValueExpected value: 286364 Actual value: 286364
+19/03/2015 18:39:38 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:39:38 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:39:38 devpinoyLogger Payment Ref. No.--> ValueExpected value: 1274467039 Actual value: 1274467039
+19/03/2015 18:39:38 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:39:38 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:39:38 devpinoyLogger Transaction Amount(USD)--> ValueExpected value: 2.0 Actual value: 2.0
+19/03/2015 18:39:38 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:39:39 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:39:39 devpinoyLogger Status--> ValueExpected value: Active Actual value: Active
+19/03/2015 18:39:39 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:39:39 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:39:39 devpinoyLogger Distributor Id--> ValueExpected value: UNIBANCO Actual value: UNIBANCO
+19/03/2015 18:39:39 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:39:39 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:39:39 devpinoyLogger Replenishment Channel--> ValueExpected value: ATM Actual value: ATM
+19/03/2015 18:39:39 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:39:41 devpinoyLogger Click Action Performed On Admin_DistributionMangementTab with Locator:: //a/img[@name='leftPanelImage4']Navigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:39:41 devpinoyLogger Type data In :: PartnerContentwith Locator :: //input[@id='partnerContent']And Value :: UNIBANCO
+19/03/2015 18:39:43 devpinoyLogger Click Action Performed On SubmitImage with Locator:: submitImgNavigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:39:45 devpinoyLogger Click Action Performed On readFromProperityFile with Locator:: UNIBANCONavigate ToPrepaid Movistar - Distributor Profile
+19/03/2015 18:39:45 devpinoyLogger Verify Text:Expected Value:9876.0 Actual value9876.00
+19/03/2015 18:39:46 devpinoyLogger Click Action Performed On LogoutButton with Locator:: //img[@name='img7' and @alt='Logout']Navigate ToPrepaid Movistar - Thank you for using prepaid service
+19/03/2015 18:39:47 devpinoyLogger Click Action Performed On LoginAgainButton with Locator:: loginImageNavigate ToMovistar Prepago - Ingrese su Clave
+19/03/2015 18:39:47 devpinoyLogger -----------------------PassTag-------------------
+19/03/2015 18:39:47 devpinoyLogger -----------------------End Test case----------------
+19/03/2015 18:39:47 devpinoyLogger ******** TEST SCRIPTS FINAL RESULT *********
+19/03/2015 18:39:47 devpinoyLogger inside headerActualResult_Pass IVR ATM BNI Recharge Request should be Success  Verify successful  ATM BNI Recharge Request IVR ATM BNI Recharge Request should be Success Pass
+19/03/2015 18:39:47 devpinoyLogger ======================================= TEST CASE START ======================================================
+19/03/2015 18:39:47 devpinoyLogger ======================================= TEST CASE ID ================================================
+19/03/2015 18:39:47 devpinoyLogger ======================================= PM_Ecuador_Distributor_BNI_RechargeReversalRequest_0002 =======================================
+19/03/2015 18:39:47 devpinoyLogger ======================================= TEST CASE ID ================================================
+19/03/2015 18:39:47 devpinoyLogger ======================================= TEST CASE DESCRIPTION ================================================
+19/03/2015 18:39:47 devpinoyLogger  Verify successful  ATM Recharge Transaction Reversal Request
+19/03/2015 18:39:47 devpinoyLogger =======================================================================================
+19/03/2015 18:39:48 devpinoyLogger **Open Url**
+19/03/2015 18:39:48 devpinoyLogger http://192.168.149.108:8180/airmanage/networkadmin/login.jsp
+19/03/2015 18:39:49 devpinoyLogger Click Action Performed On LanguageLink with Locator:: //img[@alt='View in English' and @name='img6']Navigate ToPrepaid Movistar - Please Login!
+19/03/2015 18:39:49 devpinoyLogger Type data In :: pmLoginUserNamewith Locator :: //input[@name='login']And Value :: superadmin
+19/03/2015 18:39:49 devpinoyLogger Type data In :: PasswordEditwith Locator :: //input[@name='password']And Value :: log11cal
+19/03/2015 18:39:51 devpinoyLogger Click Action Performed On loginButton with Locator:: //img[@name='loginImg']Navigate ToPrepaid Movistar - View System Messages
+19/03/2015 18:39:53 devpinoyLogger Click Action Performed On Admin_DistributionMangementTab with Locator:: //a/img[@name='leftPanelImage4']Navigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:39:53 devpinoyLogger Type data In :: PartnerContentwith Locator :: //input[@id='partnerContent']And Value :: UNIBANCO
+19/03/2015 18:39:55 devpinoyLogger Click Action Performed On SubmitImage with Locator:: submitImgNavigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:39:57 devpinoyLogger Click Action Performed On readFromProperityFile with Locator:: UNIBANCONavigate ToPrepaid Movistar - Distributor Profile
+19/03/2015 18:39:58 devpinoyLogger storeSelectedValue in appVal -->9,876.00
+19/03/2015 18:39:58 devpinoyLogger store Selected Value InDistributorAccountbalancewith value9,876.00
+19/03/2015 18:39:58 devpinoyLogger IVR ATM REQUEST:SubScriberNum=0922222222;DenominationValue=2;$
+19/03/2015 18:39:58 devpinoyLogger IVRATM--CSV--Req: SubScriberNum=0922222222;DenominationValue=2;$
+19/03/2015 18:39:58 devpinoyLogger *** BNIRechargeRequest ***
+19/03/2015 18:39:58 devpinoyLogger BNI Request:::LENMSG=0100;MSGNUM=002;BTRNNO=1208311758;NETWID=UNIBANCO;TERMID=1;REQAMT=2;TELNUM=0922222222;OPERATORIDENTITY=00
+19/03/2015 18:40:02 devpinoyLogger BNI Response:::LENMSG=00184;MSGNUM=002;BTRNNO=1208311758;ERRCDE=000;CTRNNO=286365;PPINNO=0;ACCCDT=1.49;PRMAMT=0.00;EXPDAT=18/03/2016;ACTBAL=0.00;TAXICE=0.18;TAXIVA=0.15;SEQNBR=001-087-0166246;OPERATORIDENTITY=00;
+19/03/2015 18:40:14 devpinoyLogger IVR ATM REQUEST:SubScriberNum=0922222222;DenominationValue=2;CTRNNO=286365;BTRNNO=1208311758;$
+19/03/2015 18:40:15 devpinoyLogger IVRATM--CSV--Req: SubScriberNum=0922222222;DenominationValue=2;CTRNNO=286365;BTRNNO=1208311758;$
+19/03/2015 18:40:15 devpinoyLogger *** BNIRechargeRequest ***
+19/03/2015 18:40:15 devpinoyLogger BNI Reversal request:::LENMSG=0105;OPERATORIDENTITY=00;MSGNUM=004;BTRNNO=1208311758;CTRNNO=286365;NETWID=UNIBANCO;REQAMT=2;TELNUM=0922222222
+19/03/2015 18:40:17 devpinoyLogger BNI Response:::LENMSG=00083;MSGNUM=004;BTRNNO=1208311758;CTRNNO=286365;REQAMT=2;ERRCDE=000;OPERATORIDENTITY=00;
+19/03/2015 18:40:41 devpinoyLogger **** Db Connected successfully And Executed Query Successfuly ****
+19/03/2015 18:40:41 devpinoyLogger ---Query---
+19/03/2015 18:40:41 devpinoyLogger SELECT C_TRANSACTION_ID FROM T_SETTLEMENT_TRANSACTION ss where ss.C_PARENT_TRANSACTION_ID='286365'
+19/03/2015 18:40:41 devpinoyLogger ---Query Executed and Get value from Db and Strored varibale ---
+19/03/2015 18:40:41 devpinoyLogger 286366
+19/03/2015 18:40:41 devpinoyLogger TransactionNumber
+19/03/2015 18:40:41 devpinoyLogger ***** Db Connections Closed Successfully *****
+19/03/2015 18:40:44 devpinoyLogger Click Action Performed On Admin_TransactionMonitorTab with Locator:: //a/img[@name='leftPanelImage6']Navigate ToPrepaid Movistar - Transaction Monitor
+19/03/2015 18:40:45 devpinoyLogger Click Action Performed On ReversalTransactionReport with Locator:: //img[@name='reversaltransactionreport']Navigate ToPrepaid Movistar - Reversal Transaction Report
+19/03/2015 18:40:45 devpinoyLogger Type data In :: TransactionIDTextBoxwith Locator :: //input[@name='transId']And Value :: 286366
+19/03/2015 18:40:46 devpinoyLogger Click Action Performed On SubmitImage with Locator:: submitImgNavigate ToPrepaid Movistar - Reversal Transaction Report
+19/03/2015 18:40:46 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:40:46 devpinoyLogger Transaction Number--> ValueExpected value: 286366 Actual value: 286366
+19/03/2015 18:40:46 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:40:47 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:40:47 devpinoyLogger Original Transaction Number--> ValueExpected value: 286365 Actual value: 286365
+19/03/2015 18:40:47 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:40:47 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:40:47 devpinoyLogger Initiated By--> ValueExpected value: UNIBANCO Actual value: UNIBANCO
+19/03/2015 18:40:47 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:40:47 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:40:47 devpinoyLogger Cellular Number--> ValueExpected value: 0922222222 Actual value: 0922222222
+19/03/2015 18:40:47 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:40:47 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:40:47 devpinoyLogger Replenishment Channel--> ValueExpected value: ATM Actual value: ATM
+19/03/2015 18:40:47 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:40:48 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:40:48 devpinoyLogger Transaction Amount(USD)--> ValueExpected value: 2.0 Actual value: 2.0
+19/03/2015 18:40:48 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:40:50 devpinoyLogger Click Action Performed On Admin_DistributionMangementTab with Locator:: //a/img[@name='leftPanelImage4']Navigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:40:50 devpinoyLogger Type data In :: PartnerContentwith Locator :: //input[@id='partnerContent']And Value :: UNIBANCO
+19/03/2015 18:40:51 devpinoyLogger Click Action Performed On SubmitImage with Locator:: submitImgNavigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:40:54 devpinoyLogger Click Action Performed On readFromProperityFile with Locator:: UNIBANCONavigate ToPrepaid Movistar - Distributor Profile
+19/03/2015 18:40:58 devpinoyLogger Verify Text:Expected Value:9,876.00 Actual value9,876.00
+19/03/2015 18:40:59 devpinoyLogger Click Action Performed On LogoutButton with Locator:: //img[@name='img7' and @alt='Logout']Navigate ToPrepaid Movistar - Thank you for using prepaid service
+19/03/2015 18:40:59 devpinoyLogger Click Action Performed On LoginAgainButton with Locator:: loginImageNavigate ToMovistar Prepago - Ingrese su Clave
+19/03/2015 18:40:59 devpinoyLogger -----------------------PassTag-------------------
+19/03/2015 18:40:59 devpinoyLogger -----------------------End Test case----------------
+19/03/2015 18:41:00 devpinoyLogger ******** TEST SCRIPTS FINAL RESULT *********
+19/03/2015 18:41:00 devpinoyLogger inside headerActualResult_Pass IVR ATM BNI Recharge Reversal Request should be Success  Verify successful  ATM Recharge Transaction Reversal Request IVR ATM BNI Recharge Reversal Request should be Success Pass
+19/03/2015 18:41:00 devpinoyLogger ======================================= TEST CASE START ======================================================
+19/03/2015 18:41:00 devpinoyLogger ======================================= TEST CASE ID ================================================
+19/03/2015 18:41:00 devpinoyLogger ======================================= PM_Ecuador_Distributor_IVR_IVR_AccreditationOfMinutesRequest_0006 =======================================
+19/03/2015 18:41:00 devpinoyLogger ======================================= TEST CASE ID ================================================
+19/03/2015 18:41:00 devpinoyLogger ======================================= TEST CASE DESCRIPTION ================================================
+19/03/2015 18:41:00 devpinoyLogger  Verify successful  ATM BNI(Promotion Request) AccreditationOfMinutesRequest
+19/03/2015 18:41:00 devpinoyLogger =======================================================================================
+19/03/2015 18:41:00 devpinoyLogger **Open Url**
+19/03/2015 18:41:00 devpinoyLogger http://192.168.149.108:8180/airmanage/networkadmin/login.jsp
+19/03/2015 18:41:01 devpinoyLogger Click Action Performed On LanguageLink with Locator:: //img[@alt='View in English' and @name='img6']Navigate ToPrepaid Movistar - Please Login!
+19/03/2015 18:41:01 devpinoyLogger Type data In :: pmLoginUserNamewith Locator :: //input[@name='login']And Value :: superadmin
+19/03/2015 18:41:01 devpinoyLogger Type data In :: PasswordEditwith Locator :: //input[@name='password']And Value :: log11cal
+19/03/2015 18:41:04 devpinoyLogger Click Action Performed On loginButton with Locator:: //img[@name='loginImg']Navigate ToPrepaid Movistar - View System Messages
+19/03/2015 18:41:05 devpinoyLogger Click Action Performed On Admin_DistributionMangementTab with Locator:: //a/img[@name='leftPanelImage4']Navigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:41:05 devpinoyLogger Type data In :: PartnerContentwith Locator :: //input[@id='partnerContent']And Value :: UNIBANCO
+19/03/2015 18:41:07 devpinoyLogger Click Action Performed On SubmitImage with Locator:: submitImgNavigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:41:09 devpinoyLogger Click Action Performed On readFromProperityFile with Locator:: UNIBANCONavigate ToPrepaid Movistar - Distributor Profile
+19/03/2015 18:41:10 devpinoyLogger storeSelectedValue in appVal -->9,876.00
+19/03/2015 18:41:10 devpinoyLogger store Selected Value InDistributorAccountbalancewith value9,876.00
+19/03/2015 18:41:12 devpinoyLogger **** Db Connected successfully And Executed Query Successfuly ****
+19/03/2015 18:41:12 devpinoyLogger ---Query---
+19/03/2015 18:41:12 devpinoyLogger update T_PROMOTIONS set C_PROMOTION_STATUS='2' where C_PROMOTION_STATUS='1'
+19/03/2015 18:41:12 devpinoyLogger 1
+19/03/2015 18:41:12 devpinoyLogger ***** Db Connections Closed Successfully *****
+19/03/2015 18:41:14 devpinoyLogger **** Db Connected successfully And Executed Query Successfuly ****
+19/03/2015 18:41:14 devpinoyLogger ---Query---
+19/03/2015 18:41:14 devpinoyLogger update T_PROMOTIONS set C_PROMOTION_STATUS='1' where C_PROMOTION_DECRIPTION='AUTOPROMOTION'
+19/03/2015 18:41:14 devpinoyLogger 1
+19/03/2015 18:41:14 devpinoyLogger ***** Db Connections Closed Successfully *****
+19/03/2015 18:41:17 devpinoyLogger **** Db Connected successfully And Executed Query Successfuly ****
+19/03/2015 18:41:17 devpinoyLogger ---Query---
+19/03/2015 18:41:17 devpinoyLogger select C_PROMOTION_ID from T_PROMOTIONS where C_PROMOTION_DECRIPTION='AUTOPROMOTION'
+19/03/2015 18:41:17 devpinoyLogger ---Query Executed and Get value from Db and Strored varibale ---
+19/03/2015 18:41:17 devpinoyLogger 4377
+19/03/2015 18:41:17 devpinoyLogger promotionID
+19/03/2015 18:41:17 devpinoyLogger ***** Db Connections Closed Successfully *****
+19/03/2015 18:41:20 devpinoyLogger Click Action Performed On Admin_PromotionsTab with Locator:: //a/img[@name='leftPanelImage8']Navigate ToPrepaid Movistar - Promotion
+19/03/2015 18:41:21 devpinoyLogger Type data In :: promotionSearchEditwith Locator :: //input[@name='promotionTxt']And Value :: AUTOPROMOTION
+19/03/2015 18:41:23 devpinoyLogger Click Action Performed On PromtionSearchSubmitButton with Locator:: //img[@name='imgSubmit' and @alt='Submit']Navigate ToPrepaid Movistar - Promotion
+19/03/2015 18:41:25 devpinoyLogger Click Action Performed On PromotionModifyButtonNew with Locator:: //img[@name='modifyImg']Navigate ToPrepaid Movistar
+19/03/2015 18:41:26 devpinoyLogger storeSelectedValue in appVal -->9,829.00
+19/03/2015 18:41:26 devpinoyLogger store Selected Value InPromotionAmountwith value9,829.00
+19/03/2015 18:41:26 devpinoyLogger storeTextin1.00
+19/03/2015 18:41:29 devpinoyLogger **** Db Connected successfully And Executed Query Successfuly ****
+19/03/2015 18:41:29 devpinoyLogger ---Query---
+19/03/2015 18:41:29 devpinoyLogger select C_PROMOTION_DENOM_VALUE from T_PROMOTION_DENOM where C_PROMOTION_ID='4377'
+19/03/2015 18:41:29 devpinoyLogger ---Query Executed and Get value from Db and Strored varibale ---
+19/03/2015 18:41:29 devpinoyLogger 
+19/03/2015 18:41:29 devpinoyLogger promotionActualValue
+19/03/2015 18:41:29 devpinoyLogger ***** Db Connections Closed Successfully *****
+19/03/2015 18:41:31 devpinoyLogger ***** getting Exception in Db Connect *****
+19/03/2015 18:41:31 devpinoyLogger java.sql.SQLIntegrityConstraintViolationException: ORA-00001: unique constraint (AIRERSV112_TEST.UK_PROMOTIONS_CHANNELS) violated
+
+19/03/2015 18:41:31 devpinoyLogger ***** Db Connections Closed Successfully *****
+19/03/2015 18:41:31 devpinoyLogger IVR ATM REQUEST:SubScriberNum=0922222222;DenominationValue=2;$
+19/03/2015 18:41:31 devpinoyLogger IVRATM--CSV--Req: SubScriberNum=0922222222;DenominationValue=2;$
+19/03/2015 18:41:31 devpinoyLogger *** BNIRechargeRequest ***
+19/03/2015 18:41:31 devpinoyLogger BNI Request:::LENMSG=0099;MSGNUM=002;BTRNNO=409274479;NETWID=UNIBANCO;TERMID=1;REQAMT=2;TELNUM=0922222222;OPERATORIDENTITY=00
+19/03/2015 18:41:37 devpinoyLogger BNI Response:::LENMSG=00183;MSGNUM=002;BTRNNO=409274479;ERRCDE=000;CTRNNO=286367;PPINNO=0;ACCCDT=1.49;PRMAMT=0.00;EXPDAT=18/03/2016;ACTBAL=0.00;TAXICE=0.18;TAXIVA=0.15;SEQNBR=001-087-0166247;OPERATORIDENTITY=00;
+19/03/2015 18:42:00 devpinoyLogger Click Action Performed On Admin_TransactionMonitorTab with Locator:: //a/img[@name='leftPanelImage6']Navigate ToPrepaid Movistar - Transaction Monitor
+19/03/2015 18:42:00 devpinoyLogger Type data In :: TransactionIDTextBoxwith Locator :: //input[@name='transId']And Value :: 286367
+19/03/2015 18:42:04 devpinoyLogger Click Action Performed On SubmitImage with Locator:: submitImgNavigate ToPrepaid Movistar - Transaction Monitor
+19/03/2015 18:42:30 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:42:30 devpinoyLogger --> ValueExpected value: 286367 Actual value: 286367
+19/03/2015 18:42:30 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:42:30 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:42:30 devpinoyLogger 2.00--> ValueExpected value: 1.00 Actual value: ---
+19/03/2015 18:42:30 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:42:31 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:42:31 devpinoyLogger Retail Subscriber--> ValueExpected value: ATM Actual value: ATM
+19/03/2015 18:42:31 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:42:37 devpinoyLogger storeBalance ::PromotionValueEdit
+19/03/2015 18:42:37 devpinoyLogger Store balance In Amount_After_Charge
+19/03/2015 18:42:37 devpinoyLogger Store balance value 9828.0
+19/03/2015 18:42:40 devpinoyLogger **** Db Connected successfully And Executed Query Successfuly ****
+19/03/2015 18:42:40 devpinoyLogger ---Query---
+19/03/2015 18:42:40 devpinoyLogger select C_REDUCED_PROM_VAL from T_PROMOTIONS where C_PROMOTION_ID='4377'
+19/03/2015 18:42:40 devpinoyLogger ---Query Executed and Get value from Db and Strored varibale ---
+19/03/2015 18:42:40 devpinoyLogger 9829
+19/03/2015 18:42:40 devpinoyLogger promotionActualValue
+19/03/2015 18:42:40 devpinoyLogger ***** Db Connections Closed Successfully *****
+19/03/2015 18:42:40 devpinoyLogger  ******* verifyBalanceValues ******* 
+19/03/2015 18:42:40 devpinoyLogger  Expected value 9828.0
+19/03/2015 18:42:40 devpinoyLogger  Actual value 9829.0
+19/03/2015 18:42:42 devpinoyLogger Click Action Performed On Admin_DistributionMangementTab with Locator:: //a/img[@name='leftPanelImage4']Navigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:42:42 devpinoyLogger Type data In :: PartnerContentwith Locator :: //input[@id='partnerContent']And Value :: UNIBANCO
+19/03/2015 18:42:44 devpinoyLogger Click Action Performed On SubmitImage with Locator:: submitImgNavigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:42:46 devpinoyLogger Click Action Performed On readFromProperityFile with Locator:: UNIBANCONavigate ToPrepaid Movistar - Distributor Profile
+19/03/2015 18:42:46 devpinoyLogger Verify Text:Expected Value:9874.0 Actual value9874.00
+19/03/2015 18:42:47 devpinoyLogger Click Action Performed On LogoutButton with Locator:: //img[@name='img7' and @alt='Logout']Navigate ToPrepaid Movistar - Thank you for using prepaid service
+19/03/2015 18:42:48 devpinoyLogger Click Action Performed On LoginAgainButton with Locator:: loginImageNavigate ToMovistar Prepago - Ingrese su Clave
+19/03/2015 18:42:48 devpinoyLogger =================================== Test Cases Fail ==================================
+19/03/2015 18:42:48 devpinoyLogger -----------------------End Test case-------------------
+19/03/2015 18:42:48 devpinoyLogger ******** TEST SCRIPTS FINAL RESULT *********
+19/03/2015 18:42:48 devpinoyLogger inside headerActualResult_Fail IVR ATM BNI Promotion Request Not Success  Verify successful  ATM BNI(Promotion Request) AccreditationOfMinutesRequest IVR ATM BNI Promotion Request should be Success Fail
+19/03/2015 18:42:48 devpinoyLogger ======================================= TEST CASE START ======================================================
+19/03/2015 18:42:48 devpinoyLogger ======================================= TEST CASE ID ================================================
+19/03/2015 18:42:48 devpinoyLogger ======================================= PM_Ecuador_Distributor_IVR_MinMax_AccreditationOfMinutesRequest_0007 =======================================
+19/03/2015 18:42:48 devpinoyLogger ======================================= TEST CASE ID ================================================
+19/03/2015 18:42:48 devpinoyLogger ======================================= TEST CASE DESCRIPTION ================================================
+19/03/2015 18:42:48 devpinoyLogger  Verify un successful  ATM BNI Request(Recharge amount not with in Min Max range)
+19/03/2015 18:42:48 devpinoyLogger =======================================================================================
+19/03/2015 18:42:48 devpinoyLogger **Open Url**
+19/03/2015 18:42:48 devpinoyLogger http://192.168.149.108:8180/airmanage/networkadmin/login.jsp
+19/03/2015 18:42:49 devpinoyLogger Click Action Performed On LanguageLink with Locator:: //img[@alt='View in English' and @name='img6']Navigate ToPrepaid Movistar - Please Login!
+19/03/2015 18:42:50 devpinoyLogger Type data In :: pmLoginUserNamewith Locator :: //input[@name='login']And Value :: superadmin
+19/03/2015 18:42:50 devpinoyLogger Type data In :: PasswordEditwith Locator :: //input[@name='password']And Value :: log11cal
+19/03/2015 18:42:52 devpinoyLogger Click Action Performed On loginButton with Locator:: //img[@name='loginImg']Navigate ToPrepaid Movistar - View System Messages
+19/03/2015 18:42:53 devpinoyLogger Click Action Performed On Admin_DistributionMangementTab with Locator:: //a/img[@name='leftPanelImage4']Navigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:42:53 devpinoyLogger Type data In :: PartnerContentwith Locator :: //input[@id='partnerContent']And Value :: UNIBANCO
+19/03/2015 18:42:55 devpinoyLogger Click Action Performed On SubmitImage with Locator:: submitImgNavigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:42:58 devpinoyLogger Click Action Performed On readFromProperityFile with Locator:: UNIBANCONavigate ToPrepaid Movistar - Distributor Profile
+19/03/2015 18:42:58 devpinoyLogger storeSelectedValue in appVal -->9,874.00
+19/03/2015 18:42:58 devpinoyLogger store Selected Value InDistributorAccountbalancewith value9,874.00
+19/03/2015 18:43:00 devpinoyLogger Click Action Performed On Admin_FraudMangementTab with Locator:: //a/img[@name='leftPanelImage7']Navigate ToPrepaid Movistar - Subscriber Min-Max Range Limit
+19/03/2015 18:43:02 devpinoyLogger Click Action Performed On minmaxrangelimitsTabInFraudManagementRulesPages with Locator:: //img[@name='minmaxrangelimits']Navigate ToPrepaid Movistar - Subscriber Min-Max Range Limit
+19/03/2015 18:43:02 devpinoyLogger Performed Is checkedATMReplenishmentChannelCheckBox with Locator:: //input[@name='chkBox11']
+19/03/2015 18:43:02 devpinoyLogger Type data In :: BankMinValueEditwith Locator :: //input[@type='text' and @name='minValue11']And Value :: 2.00
+19/03/2015 18:43:03 devpinoyLogger Type data In :: BankMaxValueEditwith Locator :: //input[@type='text' and @name='maxValue11']And Value :: 101.00
+19/03/2015 18:43:04 devpinoyLogger Click Action Performed On MinMaxSubmitButton with Locator:: //img[@name='submitbutton']Navigate ToPrepaid Movistar - Subscriber Min-Max Range Limit
+19/03/2015 18:43:04 devpinoyLogger IVR ATM REQUEST:SubScriberNum=0922222222;DenominationValue=1;$
+19/03/2015 18:43:04 devpinoyLogger IVRATM--CSV--Req: SubScriberNum=0922222222;DenominationValue=1;$
+19/03/2015 18:43:04 devpinoyLogger *** BNIRechargeRequest ***
+19/03/2015 18:43:04 devpinoyLogger BNI Request:::LENMSG=0099;MSGNUM=002;BTRNNO=103029269;NETWID=UNIBANCO;TERMID=1;REQAMT=1;TELNUM=0922222222;OPERATORIDENTITY=00
+19/03/2015 18:43:04 devpinoyLogger BNI Response:::LENMSG=00161;MSGNUM=002;BTRNNO=103029269;ERRCDE=005;CTRNNO=;PPINNO=null;ACCCDT=1;PRMAMT=null;EXPDAT=null;ACTBAL=;TAXICE=;TAXIVA=;SEQNBR=001-087-0000000;OPERATORIDENTITY=null;
+19/03/2015 18:43:23 devpinoyLogger **** Db Connected successfully And Executed Query Successfuly ****
+19/03/2015 18:43:23 devpinoyLogger ---Query---
+19/03/2015 18:43:23 devpinoyLogger SELECT *   FROM (SELECT   C_ERROR_DESC         FROM T_REJECT_REASON_T          WHERE C_CUSTOMER_ID = '0922222222' and C_DISTRIBUTOR_ID='UNIBANCO'         ORDER BY C_REASON_ID DESC)  WHERE ROWNUM = 1
+19/03/2015 18:43:23 devpinoyLogger ---Query Executed and Get value from Db and Strored varibale ---
+19/03/2015 18:43:23 devpinoyLogger Invalid Amount
+19/03/2015 18:43:23 devpinoyLogger comments
+19/03/2015 18:43:23 devpinoyLogger ***** Db Connections Closed Successfully *****
+19/03/2015 18:43:26 devpinoyLogger Click Action Performed On Admin_TransactionMonitorTab with Locator:: //a/img[@name='leftPanelImage6']Navigate ToPrepaid Movistar - Transaction Monitor
+19/03/2015 18:43:29 devpinoyLogger Click Action Performed On rejectedtransactionstab with Locator:: //img[@name='rejectedtransactions']Navigate ToPrepaid Movistar - Print Complaint Details
+19/03/2015 18:43:29 devpinoyLogger Select Value from Drop Down with Loacator//select[@name='chanlId']valueATM
+19/03/2015 18:43:34 devpinoyLogger Click Action Performed On SubmitImage with Locator:: submitImgNavigate ToPrepaid Movistar - Print Complaint Details
+19/03/2015 18:43:34 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:43:34 devpinoyLogger Distributor Id--> ValueExpected value: UNIBANCO Actual value: UNIBANCO
+19/03/2015 18:43:34 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:43:34 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:43:34 devpinoyLogger Transaction Amount(USD)--> ValueExpected value: 1.0 Actual value: 1.0
+19/03/2015 18:43:34 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:43:35 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:43:35 devpinoyLogger Transaction Error Description--> ValueExpected value: Invalid Amount Actual value: Invalid Amount
+19/03/2015 18:43:35 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:43:36 devpinoyLogger Click Action Performed On Admin_DistributionMangementTab with Locator:: //a/img[@name='leftPanelImage4']Navigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:43:36 devpinoyLogger Type data In :: PartnerContentwith Locator :: //input[@id='partnerContent']And Value :: UNIBANCO
+19/03/2015 18:43:38 devpinoyLogger Click Action Performed On SubmitImage with Locator:: submitImgNavigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:43:41 devpinoyLogger Click Action Performed On readFromProperityFile with Locator:: UNIBANCONavigate ToPrepaid Movistar - Distributor Profile
+19/03/2015 18:43:45 devpinoyLogger Verify Text:Expected Value:9,874.00 Actual value9,874.00
+19/03/2015 18:43:46 devpinoyLogger Click Action Performed On Admin_FraudMangementTab with Locator:: //a/img[@name='leftPanelImage7']Navigate ToPrepaid Movistar - Subscriber Min-Max Range Limit
+19/03/2015 18:43:47 devpinoyLogger Click Action Performed On minmaxrangelimitsTabInFraudManagementRulesPages with Locator:: //img[@name='minmaxrangelimits']Navigate ToPrepaid Movistar - Subscriber Min-Max Range Limit
+19/03/2015 18:43:47 devpinoyLogger Performed Is checkedATMReplenishmentChannelCheckBox with Locator:: //input[@name='chkBox11']
+19/03/2015 18:43:48 devpinoyLogger Type data In :: BankMinValueEditwith Locator :: //input[@type='text' and @name='minValue11']And Value :: 0.00
+19/03/2015 18:43:48 devpinoyLogger Type data In :: BankMaxValueEditwith Locator :: //input[@type='text' and @name='maxValue11']And Value :: 101.00
+19/03/2015 18:43:51 devpinoyLogger Click Action Performed On MinMaxSubmitButton with Locator:: //img[@name='submitbutton']Navigate ToPrepaid Movistar - Subscriber Min-Max Range Limit
+19/03/2015 18:43:52 devpinoyLogger Click Action Performed On LogoutButton with Locator:: //img[@name='img7' and @alt='Logout']Navigate ToPrepaid Movistar - Thank you for using prepaid service
+19/03/2015 18:43:53 devpinoyLogger Click Action Performed On LoginAgainButton with Locator:: loginImageNavigate ToMovistar Prepago - Ingrese su Clave
+19/03/2015 18:43:53 devpinoyLogger -----------------------PassTag-------------------
+19/03/2015 18:43:53 devpinoyLogger -----------------------End Test case----------------
+19/03/2015 18:43:53 devpinoyLogger ******** TEST SCRIPTS FINAL RESULT *********
+19/03/2015 18:43:53 devpinoyLogger inside headerActualResult_Pass IVR ATM Accreditation Of Minutes Request should be Fail  Verify un successful  ATM BNI Request(Recharge amount not with in Min Max range) IVR ATM Accreditation Of Minutes Request should be Fail Pass
+19/03/2015 18:43:53 devpinoyLogger ======================================= TEST CASE START ======================================================
+19/03/2015 18:43:53 devpinoyLogger ======================================= TEST CASE ID ================================================
+19/03/2015 18:43:53 devpinoyLogger ======================================= PM_Ecuador_Distributor_IVR_Fraud_SubScriber_AccreditationOfMinutesRequest_0008 =======================================
+19/03/2015 18:43:53 devpinoyLogger ======================================= TEST CASE ID ================================================
+19/03/2015 18:43:53 devpinoyLogger ======================================= TEST CASE DESCRIPTION ================================================
+19/03/2015 18:43:53 devpinoyLogger  Verify un successful  ATM BNIRequest(Fraud Sub Scriber)
+19/03/2015 18:43:53 devpinoyLogger =======================================================================================
+19/03/2015 18:43:54 devpinoyLogger **Open Url**
+19/03/2015 18:43:54 devpinoyLogger http://192.168.149.108:8180/airmanage/networkadmin/login.jsp
+19/03/2015 18:43:54 devpinoyLogger Click Action Performed On LanguageLink with Locator:: //img[@alt='View in English' and @name='img6']Navigate ToPrepaid Movistar - Please Login!
+19/03/2015 18:43:55 devpinoyLogger Type data In :: pmLoginUserNamewith Locator :: //input[@name='login']And Value :: superadmin
+19/03/2015 18:43:55 devpinoyLogger Type data In :: PasswordEditwith Locator :: //input[@name='password']And Value :: log11cal
+19/03/2015 18:43:57 devpinoyLogger Click Action Performed On loginButton with Locator:: //img[@name='loginImg']Navigate ToPrepaid Movistar - View System Messages
+19/03/2015 18:43:58 devpinoyLogger Click Action Performed On Admin_DistributionMangementTab with Locator:: //a/img[@name='leftPanelImage4']Navigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:43:58 devpinoyLogger Type data In :: PartnerContentwith Locator :: //input[@id='partnerContent']And Value :: UNIBANCO
+19/03/2015 18:44:00 devpinoyLogger Click Action Performed On SubmitImage with Locator:: submitImgNavigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:44:03 devpinoyLogger Click Action Performed On readFromProperityFile with Locator:: UNIBANCONavigate ToPrepaid Movistar - Distributor Profile
+19/03/2015 18:44:03 devpinoyLogger storeSelectedValue in appVal -->9,874.00
+19/03/2015 18:44:03 devpinoyLogger store Selected Value InDistributorAccountbalancewith value9,874.00
+19/03/2015 18:44:05 devpinoyLogger Click Action Performed On Admin_FraudMangementTab with Locator:: //a/img[@name='leftPanelImage7']Navigate ToPrepaid Movistar - Subscriber Min-Max Range Limit
+19/03/2015 18:44:06 devpinoyLogger Click Action Performed On FraudLockSubscriberLink with Locator:: //img[@name='fraudlockedsubscribers_tm']Navigate ToPrepaid Movistar - Fraud Locked Subscribers
+19/03/2015 18:44:07 devpinoyLogger Click Action Performed On addImageButton with Locator:: //img[@name='addImg']Navigate ToPrepaid Movistar - Fraud Locked Subscribers
+19/03/2015 18:44:07 devpinoyLogger Type data In :: FraudSubscriberEditBoxwith Locator :: //input[@name='subId']And Value :: 0922222222
+19/03/2015 18:44:08 devpinoyLogger Click Action Performed On promotionSaveImg with Locator:: //img[@name='saveImg']Navigate ToPrepaid Movistar - Fraud Locked Subscribers
+19/03/2015 18:44:08 devpinoyLogger IVR ATM REQUEST:SubScriberNum=0922222222;DenominationValue=1;$
+19/03/2015 18:44:08 devpinoyLogger IVRATM--CSV--Req: SubScriberNum=0922222222;DenominationValue=1;$
+19/03/2015 18:44:08 devpinoyLogger *** BNIRechargeRequest ***
+19/03/2015 18:44:08 devpinoyLogger BNI Request:::LENMSG=0100;MSGNUM=002;BTRNNO=1439433640;NETWID=UNIBANCO;TERMID=1;REQAMT=1;TELNUM=0922222222;OPERATORIDENTITY=00
+19/03/2015 18:44:09 devpinoyLogger BNI Response:::LENMSG=00162;MSGNUM=002;BTRNNO=1439433640;ERRCDE=026;CTRNNO=;PPINNO=null;ACCCDT=1;PRMAMT=null;EXPDAT=null;ACTBAL=;TAXICE=;TAXIVA=;SEQNBR=001-087-0000000;OPERATORIDENTITY=null;
+19/03/2015 18:44:28 devpinoyLogger **** Db Connected successfully And Executed Query Successfuly ****
+19/03/2015 18:44:28 devpinoyLogger ---Query---
+19/03/2015 18:44:28 devpinoyLogger SELECT *   FROM (SELECT   C_ERROR_DESC         FROM T_REJECT_REASON_T          WHERE C_CUSTOMER_ID = '0922222222' and C_DISTRIBUTOR_ID='UNIBANCO'         ORDER BY C_REASON_ID DESC)  WHERE ROWNUM = 1
+19/03/2015 18:44:28 devpinoyLogger ---Query Executed and Get value from Db and Strored varibale ---
+19/03/2015 18:44:28 devpinoyLogger Subscriber is Fraud Locked
+19/03/2015 18:44:28 devpinoyLogger comments
+19/03/2015 18:44:28 devpinoyLogger ***** Db Connections Closed Successfully *****
+19/03/2015 18:44:30 devpinoyLogger Click Action Performed On Admin_TransactionMonitorTab with Locator:: //a/img[@name='leftPanelImage6']Navigate ToPrepaid Movistar - Transaction Monitor
+19/03/2015 18:44:32 devpinoyLogger Click Action Performed On rejectedtransactionstab with Locator:: //img[@name='rejectedtransactions']Navigate ToPrepaid Movistar - Print Complaint Details
+19/03/2015 18:44:33 devpinoyLogger Select Value from Drop Down with Loacator//select[@name='chanlId']valueATM
+19/03/2015 18:44:37 devpinoyLogger Click Action Performed On SubmitImage with Locator:: submitImgNavigate ToPrepaid Movistar - Print Complaint Details
+19/03/2015 18:44:37 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:44:37 devpinoyLogger Distributor Id--> ValueExpected value: UNIBANCO Actual value: UNIBANCO
+19/03/2015 18:44:37 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:44:37 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:44:37 devpinoyLogger Transaction Amount(USD)--> ValueExpected value: 1.0 Actual value: 1.0
+19/03/2015 18:44:37 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:44:38 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:44:38 devpinoyLogger Transaction Error Description--> ValueExpected value: Subscriber is Fraud Locked Actual value: Subscriber is Fraud Locked
+19/03/2015 18:44:38 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:44:39 devpinoyLogger Click Action Performed On Admin_DistributionMangementTab with Locator:: //a/img[@name='leftPanelImage4']Navigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:44:39 devpinoyLogger Type data In :: PartnerContentwith Locator :: //input[@id='partnerContent']And Value :: UNIBANCO
+19/03/2015 18:44:41 devpinoyLogger Click Action Performed On SubmitImage with Locator:: submitImgNavigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:44:44 devpinoyLogger Click Action Performed On readFromProperityFile with Locator:: UNIBANCONavigate ToPrepaid Movistar - Distributor Profile
+19/03/2015 18:44:48 devpinoyLogger Verify Text:Expected Value:9,874.00 Actual value9,874.00
+19/03/2015 18:44:49 devpinoyLogger Click Action Performed On Admin_FraudMangementTab with Locator:: //a/img[@name='leftPanelImage7']Navigate ToPrepaid Movistar - Subscriber Min-Max Range Limit
+19/03/2015 18:44:50 devpinoyLogger Click Action Performed On FraudLockSubscriberLink with Locator:: //img[@name='fraudlockedsubscribers_tm']Navigate ToPrepaid Movistar - Fraud Locked Subscribers
+19/03/2015 18:44:50 devpinoyLogger Type data In :: FraudSubscriberEditBoxwith Locator :: //input[@name='subId']And Value :: 0922222222
+19/03/2015 18:44:52 devpinoyLogger Click Action Performed On SubMitButton_FraudRule with Locator:: //img[@name='submitImg']Navigate ToPrepaid Movistar - Fraud Locked Subscribers
+19/03/2015 18:44:52 devpinoyLogger Performed Is checkedFraudSubScriberCheckBox with Locator:: //input[@name='chk0']
+19/03/2015 18:44:53 devpinoyLogger Click Action Performed On UnlockButton with Locator:: //img[@name='unlockImg']Navigate ToPrepaid Movistar - Fraud Locked Subscribers
+19/03/2015 18:44:54 devpinoyLogger Click Action Performed On LogoutButton with Locator:: //img[@name='img7' and @alt='Logout']Navigate ToPrepaid Movistar - Thank you for using prepaid service
+19/03/2015 18:44:54 devpinoyLogger Click Action Performed On LoginAgainButton with Locator:: loginImageNavigate ToMovistar Prepago - Ingrese su Clave
+19/03/2015 18:44:54 devpinoyLogger -----------------------PassTag-------------------
+19/03/2015 18:44:54 devpinoyLogger -----------------------End Test case----------------
+19/03/2015 18:44:54 devpinoyLogger ******** TEST SCRIPTS FINAL RESULT *********
+19/03/2015 18:44:54 devpinoyLogger inside headerActualResult_Pass IVR ATM Accreditation Of Minutes Request should be Fail  Verify un successful  ATM BNIRequest(Fraud Sub Scriber) IVR ATM Accreditation Of Minutes Request should be Fail Pass
+19/03/2015 18:44:54 devpinoyLogger ======================================= TEST CASE START ======================================================
+19/03/2015 18:44:54 devpinoyLogger ======================================= TEST CASE ID ================================================
+19/03/2015 18:44:54 devpinoyLogger ======================================= PM_Ecuador_Distributor_IVR_Denomination InActive_AccreditationOfMinutesRequest_0009 =======================================
+19/03/2015 18:44:54 devpinoyLogger ======================================= TEST CASE ID ================================================
+19/03/2015 18:44:54 devpinoyLogger ======================================= TEST CASE DESCRIPTION ================================================
+19/03/2015 18:44:54 devpinoyLogger  Verify un successful  ATM BNIRequest(Denomination InActive)
+19/03/2015 18:44:54 devpinoyLogger =======================================================================================
+19/03/2015 18:44:55 devpinoyLogger **Open Url**
+19/03/2015 18:44:55 devpinoyLogger http://192.168.149.108:8180/airmanage/networkadmin/login.jsp
+19/03/2015 18:44:56 devpinoyLogger Click Action Performed On LanguageLink with Locator:: //img[@alt='View in English' and @name='img6']Navigate ToPrepaid Movistar - Please Login!
+19/03/2015 18:44:56 devpinoyLogger Type data In :: pmLoginUserNamewith Locator :: //input[@name='login']And Value :: superadmin
+19/03/2015 18:44:56 devpinoyLogger Type data In :: PasswordEditwith Locator :: //input[@name='password']And Value :: log11cal
+19/03/2015 18:44:58 devpinoyLogger Click Action Performed On loginButton with Locator:: //img[@name='loginImg']Navigate ToPrepaid Movistar - View System Messages
+19/03/2015 18:44:59 devpinoyLogger Click Action Performed On Admin_DistributionMangementTab with Locator:: //a/img[@name='leftPanelImage4']Navigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:45:00 devpinoyLogger Type data In :: PartnerContentwith Locator :: //input[@id='partnerContent']And Value :: UNIBANCO
+19/03/2015 18:45:01 devpinoyLogger Click Action Performed On SubmitImage with Locator:: submitImgNavigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:45:04 devpinoyLogger Click Action Performed On readFromProperityFile with Locator:: UNIBANCONavigate ToPrepaid Movistar - Distributor Profile
+19/03/2015 18:45:04 devpinoyLogger storeSelectedValue in appVal -->9,874.00
+19/03/2015 18:45:04 devpinoyLogger store Selected Value InDistributorAccountbalancewith value9,874.00
+19/03/2015 18:45:06 devpinoyLogger **** Db Connected successfully And Executed Query Successfuly ****
+19/03/2015 18:45:06 devpinoyLogger ---Query---
+19/03/2015 18:45:06 devpinoyLogger UPDATE T_PIN_DENOMINATION SET C_DENOMINATION_STATUS='2'   WHERE C_DENOMINATION_VALUE='2'  
+19/03/2015 18:45:06 devpinoyLogger 1
+19/03/2015 18:45:06 devpinoyLogger ***** Db Connections Closed Successfully *****
+19/03/2015 18:45:08 devpinoyLogger **** Db Connected successfully And Executed Query Successfuly ****
+19/03/2015 18:45:08 devpinoyLogger ---Query---
+19/03/2015 18:45:08 devpinoyLogger  UPDATE T_PIN_DENOMINATION SET C_DENOMINATION_STATUS='2'   WHERE C_DENOMINATION_PLANID='15e'
+19/03/2015 18:45:08 devpinoyLogger 2
+19/03/2015 18:45:08 devpinoyLogger ***** Db Connections Closed Successfully *****
+19/03/2015 18:45:08 devpinoyLogger IVR ATM REQUEST:SubScriberNum=0922222222;DenominationValue=2;$
+19/03/2015 18:45:08 devpinoyLogger IVRATM--CSV--Req: SubScriberNum=0922222222;DenominationValue=2;$
+19/03/2015 18:45:08 devpinoyLogger *** BNIRechargeRequest ***
+19/03/2015 18:45:08 devpinoyLogger BNI Request:::LENMSG=0099;MSGNUM=002;BTRNNO=264490809;NETWID=UNIBANCO;TERMID=1;REQAMT=2;TELNUM=0922222222;OPERATORIDENTITY=00
+19/03/2015 18:45:10 devpinoyLogger BNI Response:::LENMSG=00172;MSGNUM=002;BTRNNO=264490809;ERRCDE=003;CTRNNO=286370;PPINNO=;ACCCDT=0.00;PRMAMT=0.00;EXPDAT=;ACTBAL=0.00;TAXICE=0.00;TAXIVA=0.00;SEQNBR=001-087-0166248;OPERATORIDENTITY=00;
+19/03/2015 18:45:29 devpinoyLogger **** Db Connected successfully And Executed Query Successfuly ****
+19/03/2015 18:45:29 devpinoyLogger ---Query---
+19/03/2015 18:45:29 devpinoyLogger SELECT *   FROM (SELECT   C_ERROR_DESC         FROM T_REJECT_REASON_T          WHERE C_CUSTOMER_ID = '0922222222' and C_DISTRIBUTOR_ID='UNIBANCO'         ORDER BY C_REASON_ID DESC)  WHERE ROWNUM = 1
+19/03/2015 18:45:29 devpinoyLogger ---Query Executed and Get value from Db and Strored varibale ---
+19/03/2015 18:45:29 devpinoyLogger Invalid Denomination value
+19/03/2015 18:45:29 devpinoyLogger comments
+19/03/2015 18:45:29 devpinoyLogger ***** Db Connections Closed Successfully *****
+19/03/2015 18:45:31 devpinoyLogger Click Action Performed On Admin_TransactionMonitorTab with Locator:: //a/img[@name='leftPanelImage6']Navigate ToPrepaid Movistar - Transaction Monitor
+19/03/2015 18:45:33 devpinoyLogger Click Action Performed On rejectedtransactionstab with Locator:: //img[@name='rejectedtransactions']Navigate ToPrepaid Movistar - Print Complaint Details
+19/03/2015 18:45:34 devpinoyLogger Select Value from Drop Down with Loacator//select[@name='chanlId']valueATM
+19/03/2015 18:45:39 devpinoyLogger Click Action Performed On SubmitImage with Locator:: submitImgNavigate ToPrepaid Movistar - Print Complaint Details
+19/03/2015 18:45:39 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:45:39 devpinoyLogger Distributor Id--> ValueExpected value: UNIBANCO Actual value: UNIBANCO
+19/03/2015 18:45:39 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:45:39 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:45:39 devpinoyLogger Transaction Amount(USD)--> ValueExpected value: 2.0 Actual value: 0.0
+19/03/2015 18:45:39 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:45:40 devpinoyLogger ----- Verify Table -----
+19/03/2015 18:45:40 devpinoyLogger Transaction Error Description--> ValueExpected value: Invalid Denomination value Actual value: Invalid Denomination value
+19/03/2015 18:45:40 devpinoyLogger ----------------------------------------------------
+19/03/2015 18:45:41 devpinoyLogger Click Action Performed On Admin_DistributionMangementTab with Locator:: //a/img[@name='leftPanelImage4']Navigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:45:41 devpinoyLogger Type data In :: PartnerContentwith Locator :: //input[@id='partnerContent']And Value :: UNIBANCO
+19/03/2015 18:45:42 devpinoyLogger Click Action Performed On SubmitImage with Locator:: submitImgNavigate ToPrepaid Movistar - View Distributors
+19/03/2015 18:45:44 devpinoyLogger Click Action Performed On readFromProperityFile with Locator:: UNIBANCONavigate ToPrepaid Movistar - Distributor Profile
+19/03/2015 18:45:48 devpinoyLogger Verify Text:Expected Value:9,874.00 Actual value9,874.00
+19/03/2015 18:45:50 devpinoyLogger **** Db Connected successfully And Executed Query Successfuly ****
+19/03/2015 18:45:50 devpinoyLogger ---Query---
+19/03/2015 18:45:50 devpinoyLogger UPDATE T_PIN_DENOMINATION SET C_DENOMINATION_STATUS='1'   WHERE C_DENOMINATION_VALUE='2'  
+19/03/2015 18:45:50 devpinoyLogger 1
+19/03/2015 18:45:50 devpinoyLogger ***** Db Connections Closed Successfully *****
+19/03/2015 18:45:52 devpinoyLogger **** Db Connected successfully And Executed Query Successfuly ****
+19/03/2015 18:45:52 devpinoyLogger ---Query---
+19/03/2015 18:45:52 devpinoyLogger  UPDATE T_PIN_DENOMINATION SET C_DENOMINATION_STATUS='1'   WHERE C_DENOMINATION_PLANID='15e'
+19/03/2015 18:45:52 devpinoyLogger 2
+19/03/2015 18:45:52 devpinoyLogger ***** Db Connections Closed Successfully *****
+19/03/2015 18:45:53 devpinoyLogger Click Action Performed On LogoutButton with Locator:: //img[@name='img7' and @alt='Logout']Navigate ToPrepaid Movistar - Thank you for using prepaid service
+19/03/2015 18:45:54 devpinoyLogger Click Action Performed On LoginAgainButton with Locator:: loginImageNavigate ToMovistar Prepago - Ingrese su Clave
+19/03/2015 18:45:54 devpinoyLogger =================================== Test Cases Fail ==================================
+19/03/2015 18:45:54 devpinoyLogger -----------------------End Test case-------------------
+19/03/2015 18:45:54 devpinoyLogger ******** TEST SCRIPTS FINAL RESULT *********
+19/03/2015 18:45:54 devpinoyLogger inside headerActualResult_Fail IVR ATM BNI Request should be Fail  Verify un successful  ATM BNIRequest(Denomination InActive) IVR ATM BNI Request should be Fail Fail

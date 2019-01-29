@@ -1,0 +1,18 @@
+30/03/2017 11:06:52 devpinoyLogger ======================================= TEST CASE START ======================================================
+30/03/2017 11:06:52 devpinoyLogger ======================================= TEST CASE ID ================================================
+30/03/2017 11:06:52 devpinoyLogger ======================================= TokaTestcase_001 =======================================
+30/03/2017 11:06:52 devpinoyLogger ======================================= TEST CASE ID ================================================
+30/03/2017 11:06:52 devpinoyLogger ======================================= TEST CASE DESCRIPTION ================================================
+30/03/2017 11:06:52 devpinoyLogger toka login 
+30/03/2017 11:06:52 devpinoyLogger =======================================================================================
+30/03/2017 11:06:53 devpinoyLogger **Open Url**
+30/03/2017 11:06:53 devpinoyLogger http://192.168.149.5:8080/CCUI/loginv.do?dispmethd=call
+30/03/2017 11:06:54 devpinoyLogger Type data In :: TokaNetworkEditwith Locator :: //table/tbody/tr[3]/td/table/tbody/tr/td[2]/table/tbody/tr[3]/td[2]/inputAnd Value :: toka
+30/03/2017 11:06:54 devpinoyLogger Type data In :: TokaUserNamewith Locator :: //table/tbody/tr[3]/td/table/tbody/tr/td[2]/table/tbody/tr[4]/td[2]/inputAnd Value :: chief
+30/03/2017 11:06:55 devpinoyLogger Type data In :: TokaPasswordwith Locator :: //table/tbody/tr[3]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td[2]/inputAnd Value :: test1234
+30/03/2017 11:06:57 devpinoyLogger Click Action Performed On TokaLoginButton with Locator:: //div[@id='submit_btn']/inputNavigate ToCustomer Service
+30/03/2017 11:06:58 devpinoyLogger Click Action Performed On TokaLogoutButton with Locator:: //a[@class='logout_nav']Navigate ToLogin
+30/03/2017 11:06:58 devpinoyLogger -----------------------PassTag-------------------
+30/03/2017 11:06:58 devpinoyLogger -----------------------End Test case----------------
+30/03/2017 11:06:58 devpinoyLogger ******** TEST SCRIPTS FINAL RESULT *********
+30/03/2017 11:06:58 devpinoyLogger inside headerActualResult_Pass toka login success successfully toka login  toka login success successfully Pass

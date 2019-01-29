@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/saikirann/Desktop/Sai Kiran Backup/USB Backup/1/1/KeyWordDriven_framework_07_04_2017/PM_Ecuador_17_03_2015/lib/airutilities.jar"/>
+	<classpathentry kind="lib" path="C:/Users/saikirann/Desktop/Sai Kiran Backup/USB Backup/1/1/KeyWordDriven_framework_07_04_2017/PM_Ecuador_17_03_2015/lib/commons-httpclient.jar"/>
+	<classpathentry kind="lib" path="C:/Users/saikirann/Desktop/Sai Kiran Backup/USB Backup/1/1/KeyWordDriven_framework_07_04_2017/PM_Ecuador_17_03_2015/lib/iText-2.1.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/saikirann/Desktop/Sai Kiran Backup/USB Backup/1/1/KeyWordDriven_framework_07_04_2017/PM_Ecuador_17_03_2015/lib/jawin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/saikirann/Desktop/Sai Kiran Backup/USB Backup/1/1/KeyWordDriven_framework_07_04_2017/PM_Ecuador_17_03_2015/lib/jawin-stubs.jar"/>
+	<classpathentry kind="lib" path="C:/Users/saikirann/Desktop/Sai Kiran Backup/USB Backup/1/1/KeyWordDriven_framework_07_04_2017/PM_Ecuador_17_03_2015/lib/jdom.jar"/>
+	<classpathentry kind="lib" path="C:/Users/saikirann/Desktop/Sai Kiran Backup/USB Backup/1/1/KeyWordDriven_framework_07_04_2017/PM_Ecuador_17_03_2015/lib/jpos.jar"/>
+	<classpathentry kind="lib" path="C:/Users/saikirann/Desktop/Sai Kiran Backup/USB Backup/1/1/KeyWordDriven_framework_07_04_2017/PM_Ecuador_17_03_2015/lib/junit-3.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/saikirann/Desktop/Sai Kiran Backup/USB Backup/1/1/KeyWordDriven_framework_07_04_2017/PM_Ecuador_17_03_2015/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/saikirann/Desktop/Sai Kiran Backup/USB Backup/1/1/KeyWordDriven_framework_07_04_2017/PM_Ecuador_17_03_2015/lib/mail.jar"/>
+	<classpathentry kind="lib" path="C:/Users/saikirann/Desktop/Sai Kiran Backup/USB Backup/1/1/KeyWordDriven_framework_07_04_2017/PM_Ecuador_17_03_2015/lib/MCipher.jar"/>
+	<classpathentry kind="lib" path="C:/Users/saikirann/Desktop/Sai Kiran Backup/USB Backup/1/1/KeyWordDriven_framework_07_04_2017/PM_Ecuador_17_03_2015/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/saikirann/Desktop/Sai Kiran Backup/USB Backup/1/1/KeyWordDriven_framework_07_04_2017/PM_Ecuador_17_03_2015/lib/selenium-java-2.44.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/saikirann/Desktop/Sai Kiran Backup/USB Backup/1/1/KeyWordDriven_framework_07_04_2017/PM_Ecuador_17_03_2015/lib/selenium-java-2.44.0-srcs.jar"/>
+	<classpathentry kind="lib" path="C:/Users/saikirann/Desktop/Sai Kiran Backup/USB Backup/1/1/KeyWordDriven_framework_07_04_2017/PM_Ecuador_17_03_2015/lib/selenium-server-standalone-2.44.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
